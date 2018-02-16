@@ -1,0 +1,141 @@
+#head-bar {
+
+	height: 56px;
+	background-color: #333;
+	margin: 0px;
+	padding: 0px;
+}
+
+.title {
+
+	position: absolute;
+	display: inline-block;
+	color: white;
+	text-decoration-color: white;
+	font-size: 30px;
+	left: 375px;
+	top: 20px;
+	margin: 0 auto;
+}
+
+
+/*/////Hamburger menu stuff//////*/
+
+.hamburger-menu {
+
+	position: relative;
+	display: inline-block;
+
+}
+
+.dropdownbtn:hover, .dropdownbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdownbtn {
+
+	background-color: #333;
+    color: white;
+    padding: 11px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.dropdown-list {
+
+    display: none;
+    position: relative;
+    background-color: #f1f1f1;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-list a{
+
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+.hamburger-menu a:hover {
+	background-color: #ddd
+}
+
+.show {
+	display:block;
+}
+
+.noShow {
+
+	display: none;
+}
+
+/*////////////////////Profile dropdown menu stuff//////////////////////////////*/
+
+.account-menu {
+
+	position: relative;
+	display: inline-block;
+	font-size: 25px;
+	color: white;
+	float: right;
+
+}
+
+.profilebtn:hover, .profilebtn:focus {
+    background-color: #2980B9;
+}
+
+.profilebtn {
+
+	position: relative;
+	background-color: #333;
+    color: white;
+    font-size: 20px;
+    padding: 13px;
+    padding-right: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.dropdown-list-profile {
+
+    display: none;
+    position: relative;
+    background-color: #f1f1f1;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 16px;
+}
+
+.dropdown-list-profile a{
+
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+.account-menu a:hover {
+	background-color: #ddd
+}
+
+.account-menu img {
+
+	position: relative;
+	width: 25px;
+	height: 25px;
+	right: 5px;
+	top: 5px;
+
+}
+
+.showProfile {
+	display:block;
+}
