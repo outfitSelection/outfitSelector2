@@ -33,20 +33,37 @@
 
 		</div>
 
+		<!-- The Form Section of the page-->
 		<div class="form-box">
 			<form>
+				<!-- Drop down menu for the clothing types-->
 				Clothing Type:<br>
 				<select name="clothing_types">
-					<option selected="selected">Choose an Outfit Type</option>
-					<option value="tops">Tops</option>
-					<option value="bottoms">Bottoms</option>
-					<option value="dresses">Dresses</option>
+					<option value="" selected disbaled hidden></option>
+					<option value="tops">Top</option>
+					<option value="bottoms">Bottom</option>
+					<option value="dresses">Dress</option>
 					<option value="business">Business</option>
 					<option value="swim">Swim</option>
 				</select>
 				<br>
+
+				<!-- Dropd own menu for pre-defined tags -->
 				Tags (red, summer, etc.):<br>
-				<input type="text" name="tags">
+				<select name="tags">
+					<option value="" selected disbaled hidden></option>
+					<option value="summer">Summer</option>
+					<option value="winter">Winter</option>
+					<option value="dresses">Spring</option>
+					<option value="business">Fall</option>
+					<option value="rainy_day">Rainy Day</option>
+					<option value="workout">Workout</option>
+					<option value="formal">Formal</option>
+					<option value="experimental">Experimental</option>
+					<option value="lounge">Lounge</option>
+					<option value="pajamas">Pajamas</option>
+				</select>
+				<br>
 			</form>
 		</div>
 
