@@ -18,10 +18,3 @@ $(document).ready(function(){
 		$(".gallery").show();
 	});
 });
-
-// function showGallery() {
-// 	// var gallery = document.getElementById("gallery");
-// 	// gallery.style.visibility = 'visible';
-// 	debugger;
-
-// }
