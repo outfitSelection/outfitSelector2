@@ -181,4 +181,47 @@
 #calendar #weather img {
     width: 100%;
     height: 100%;
+
+/*  CSS for the addoutfit page */
+#upload-image{
+    
+}
+
+.gallery {
+    width:500px;
+    height:100px;
+
+}
+
+#top-image{
+    width:20%;
+    height:100%;
+    float:left;
+}
+
+#bottom-image{
+    width:20%;
+    height:100%;
+    float:left;
+
+}
+
+#dress-image{
+    width:20%;
+    height:100%;
+    float:left;
+
+}
+
+#business-image{
+    width:20%;
+    height:100%;
+    float:left;
+
+}
+
+#swim-image{
+    width:20%;
+    height:100%;
+    float:left;
 }
