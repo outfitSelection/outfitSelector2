@@ -14,7 +14,6 @@ function addOutfitConfirmation () {
 }
 
 $(document).ready(function(){
-	$(".gallery").hide();
 	$("#upload-image").click(function(){
 		$(".gallery").show();
 	});
