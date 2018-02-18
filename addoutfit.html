@@ -72,11 +72,21 @@
 				<br>
 
 				<!-- Button to upload image of clothing (pre-selected) -->
-				<button type="button" onclick="showGallery()"> Upload Image </button>
+				<button type="button" id="upload-image"> 
+					Choose Image 
+				</button>
+
+				<!-- image gallery of pre selected outfits -->
+				<div class="gallery"> 
+					<img id="top-image" src="images/generic_top.jpg">
+					<img id="bottom-image" src="images/generic_bottom.jpg">
+					<img id="dress-image" src="images/generic_dress.jpg">
+					<img id="business-image" src="images/generic_business.jpg">
+					<img id="swim-image" src="images/generic_swim.jpg">
+				</div>
 
 				<!-- Button for submitting outfit -->
 				<input type="submit" value="Add to Closet" onclick="addOutfitConfirmation()"> 
-
 				<!-- Buton to cancel -->
 				<!-- TODO: add styling to make it look like a button -->
 				<div class="btn-cancel">
@@ -92,6 +102,9 @@
 		</div>
 	</div>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="addoutfit.js"></script>
+	
+
 </body>
 </html>
