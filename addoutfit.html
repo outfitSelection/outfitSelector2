@@ -1,10 +1,11 @@
 <html>
 <header>
-	<link rel="stylesheet" type="text/css" href="home.css"/>
+	<link rel="stylesheet" type="text/css" href="addoutfit.css"/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </header>
-<body>
+<body onload="myFunction()">
 	<div id="screen">
 		<div id="head-bar">
 			<div class="hamburger-menu">
@@ -38,7 +39,7 @@
 			<form name ="add-outfit-form">
 				<!-- Drop down menu for the clothing types-->
 				<br>
-				Clothing Type:<br>
+				*Clothing Type:<br>
 				<select name="clothing_types" required>
 					<option value="" selected disbaled></option>
 					<option value="tops">Top</option>
@@ -51,22 +52,20 @@
 				<br>
 
 				<!-- Drop down menu for pre-defined tags -->
-				Tags:<br>
-				<select name="tags" required>
-					<option value="" selected disbaled></option>
-					<option value="summer">Summer</option>
-					<option value="winter">Winter</option>
-					<option value="dresses">Spring</option>
-					<option value="business">Fall</option>
-					<option value="rainy_day">Rainy Day</option>
-					<option value="workout">Workout</option>
-					<option value="casual">Casual</option>
-					<option value="formal">Formal</option>
-					<option value="experimental">Experimental</option>
-					<option value="lounge">Lounge</option>
-					<option value="pajamas">Pajamas</option>
-				</select>
-				<br>
+				Tags: <br>
+				<div>
+					<label><input type="checkbox" name="tags">Summer</label>
+					<label><input type="checkbox" name="tags">Winter</label>
+					<label><input type="checkbox" name="tags">Spring</label>
+					<label><input type="checkbox" name="tags">Fall</label>
+					<label><input type="checkbox" name="tags">Rainy</label>
+					<label><input type="checkbox" name="tags">Workout</label>
+					<label><input type="checkbox" name="tags">Casual</label>
+					<label><input type="checkbox" name="tags">Formal</label>
+					<label><input type="checkbox" name="tags">Experimental</label>
+					<label><input type="checkbox" name="tags">Lounge</label>
+					<label><input type="checkbox" name="tags">Pajamas</label>
+				</div>
 				<br>
 
 				<!-- Color picker -->
@@ -102,26 +101,20 @@
 				</div>
 				<br>
 
-				Brand Name (optional): <br>
+				Brand Name: <br>
 				<input type="text" name="brand">
 				<br>
 				<br>
 
+				<!--Upload image-->
+				Upload Image: <br>
+				<input type="file" id="myFile" multiple size="50" onchange="myFunction()">
+				<br>
+				<p> *required </p>
+				<br>
+				<br>
 				<!-- Button to upload image of clothing (pre-selected) -->
-				<button type="button" id="upload-image"> 
-					Choose Image 
-				</button>
 
-				<!-- image gallery of pre selected outfits -->
-				<div class="gallery"> 
-					<img id="top-image" src="images/generic_top.jpg">
-					<img id="bottom-image" src="images/generic_bottom.jpg">
-					<img id="dress-image" src="images/generic_dress.jpg">
-					<img id="business-image" src="images/generic_business.jpg">
-					<img id="swim-image" src="images/generic_swim.jpg">
-				</div>
-				<br>
-				<br>
 
 				<!-- Button for submitting outfit -->
 				<input type="submit" value="Add to Closet" onclick="addOutfitConfirmation()"> 
@@ -131,6 +124,8 @@
 					<a href="home.html"> Cancel </a>
 				</div>
 
+
+
 			</form>
 		</div>
 
@@ -139,8 +134,7 @@
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="addoutfit.js"></script>
-	<script src="headermenu.js"></script>
+	<script src="home.js"></script>
 
 </body>
 </html>

@@ -13,9 +13,8 @@
   color: white;
   text-decoration-color: white;
   font-size: 40px;
-  left: 875px;
+  left: 46%;
   top: 13px;
-  margin: 0 auto;
 }
 
 
@@ -185,6 +184,10 @@
 /*  CSS for the addoutfit page */
 #upload-image{
     
+}
+
+.form-box {
+    margin-left: 10px;
 }
 
 
