@@ -13,9 +13,8 @@
   color: white;
   text-decoration-color: white;
   font-size: 40px;
-  left: 875px;
+  left: 46%;
   top: 13px;
-  margin: 0 auto;
 }
 
 
@@ -140,7 +139,7 @@
 #closet {
 
   position: relative;
-  top: 40px;
+  top: 50px;
 }
 
 .drawer {
@@ -200,8 +199,8 @@ a{
 #search {
 
   position: relative;
-  top: 60px;
-  left: 20px;
+  top: 50px;
+  left: 5px;
 
 }
 
@@ -216,5 +215,34 @@ a{
   padding-bottom: 5px;
   padding-left: 27px;
   padding-right: 20px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  transition: 0.5s;
+  outline: none;
 
+}
+
+#myInput:focus {
+
+  border: 3px solid #555;
+}
+
+#myInput:focus + #myUL{
+
+  border: 3px solid #555;
+  display: block;
+
+}
+
+#myUL {
+
+  position: absolute;
+  margin-top: -3px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  font-size: 18px;
+  padding-left: 5px;
+  padding-right: 50px;
+  color: black;
+  display: none;
+  z-index: 1;
 }
