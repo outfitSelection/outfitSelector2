@@ -4,7 +4,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
 </header>
-<body>
+<body onload="myFunction()">
 	<div id="screen">
 		<div id="head-bar">
 			<div class="hamburger-menu">
@@ -107,21 +107,14 @@
 				<br>
 				<br>
 
-				<!-- Button to upload image of clothing (pre-selected) -->
-				<button type="button" id="upload-image"> 
-					Choose Image 
-				</button>
+				<!--Upload image-->
+				Upload Image: <br>
+				<input type="file" id="myFile" multiple size="50" onchange="myFunction()">
+				<br>
+				<br>
 
-				<!-- image gallery of pre selected outfits -->
-				<div class="gallery"> 
-					<img id="top-image" src="images/generic_top.jpg">
-					<img id="bottom-image" src="images/generic_bottom.jpg">
-					<img id="dress-image" src="images/generic_dress.jpg">
-					<img id="business-image" src="images/generic_business.jpg">
-					<img id="swim-image" src="images/generic_swim.jpg">
-				</div>
-				<br>
-				<br>
+				<!-- Button to upload image of clothing (pre-selected) -->
+
 
 				<!-- Button for submitting outfit -->
 				<input type="submit" value="Add to Closet" onclick="addOutfitConfirmation()"> 
@@ -139,8 +132,7 @@
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="addoutfit.js"></script>
-	<script src="headermenu.js"></script>
+	<script src="home.js"></script>
 
 </body>
 </html>
