@@ -12,12 +12,13 @@
 
 				<div id="dropdown-menu" class="dropdown-list">
 					<a href="home.html">Home</a>
-					<a href="addoutfit.html">Add an Outfit</a>
+					<a href="addoutfit.html">Add to Closet</a>
+					<a href="closet.html">My Closet</a>
 				</div>
 			</div>
 
 			<div class="title">
-				Add an Outfit
+				Add to Closet
 			</div>
 
 			<div class="account-menu">
@@ -33,65 +34,29 @@
 
 		</div>
 
-		<!-- The Form Section of the page-->
 		<div class="form-box">
-			<form name ="add-outfit-form">
-				<!-- Drop down menu for the clothing types-->
+			<form>
 				Clothing Type:<br>
-				<select name="clothing_types" required>
-					<option value="" selected disbaled></option>
-					<option value="tops">Top</option>
-					<option value="bottoms">Bottom</option>
-					<option value="dresses">Dress</option>
+				<select name="clothing_types">
+					<option selected="selected">Choose an Outfit Type</option>
+					<option value="tops">Tops</option>
+					<option value="bottoms">Bottoms</option>
+					<option value="dresses">Dresses</option>
 					<option value="business">Business</option>
 					<option value="swim">Swim</option>
 				</select>
 				<br>
-
-				<!-- Drop down menu for pre-defined tags -->
-				Tags:<br>
-				<select name="tags" required>
-					<option value="" selected disbaled></option>
-					<option value="summer">Summer</option>
-					<option value="winter">Winter</option>
-					<option value="dresses">Spring</option>
-					<option value="business">Fall</option>
-					<option value="rainy_day">Rainy Day</option>
-					<option value="workout">Workout</option>
-					<option value="casual">Casual</option>
-					<option value="formal">Formal</option>
-					<option value="experimental">Experimental</option>
-					<option value="lounge">Lounge</option>
-					<option value="pajamas">Pajamas</option>
-				</select>
-				<br>
-
-				<!-- Color picker -->
-				Color:<br>
-				<input name="color-picker" type="color">
-				<br>
-
-				<!-- Button to upload image of clothing (pre-selected) -->
-				<button type="button" onclick="showGallery()"> Upload Image </button>
-
-				<!-- Button for submitting outfit -->
-				<input type="submit" value="Add to Closet" onclick="addOutfitConfirmation()"> 
-
-				<!-- Buton to cancel -->
-				<!-- TODO: add styling to make it look like a button -->
-				<div class="btn-cancel">
-					<a href="home.html"> Cancel </a>
-				</div>
-
+				Tags (red, summer, etc.):<br>
+				<input type="text" name="tags">
 			</form>
-
-			
-
-			
-
 		</div>
+
 	</div>
 
-	<script src="addoutfit.js"></script>
+
+
+
+
+	<script src="headermenu.js"></script>
 </body>
 </html>
