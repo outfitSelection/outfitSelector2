@@ -12,4 +12,3 @@ function addOutfitConfirmation () {
 	confirm("Outfit added to Closet!");
 	return true;
 }
-
