@@ -13,9 +13,8 @@
   color: white;
   text-decoration-color: white;
   font-size: 40px;
-  left: 875px;
+  left: 46%;
   top: 13px;
-  margin: 0 auto;
 }
 
 
@@ -181,56 +180,4 @@
 #calendar #weather img {
     width: 100%;
     height: 100%;
-
-/*  CSS for the addoutfit page */
-#upload-image{
-    
-}
-
-
-input {
-    width: 200px;
-}
-
-.gallery {
-    width: 1500px;
-    height: 100px;
-}
-
-.gallery img {
-    display: inline-block;
-    height: 100px;
-}
-
-#top-image{
-    width:20%;
-    height:100%;
-    float:left;
-}
-
-#bottom-image{
-    width:20%;
-    height:100%;
-    float:left;
-
-}
-
-#dress-image{
-    width:20%;
-    height:100%;
-    float:left;
-
-}
-
-#business-image{
-    width:20%;
-    height:100%;
-    float:left;
-
-}
-
-#swim-image{
-    width:20%;
-    height:100%;
-    float:left;
 }

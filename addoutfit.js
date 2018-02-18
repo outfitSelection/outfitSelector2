@@ -12,17 +12,3 @@ function addOutfitConfirmation () {
 	confirm("Outfit added to Closet!");
 	return true;
 }
-
-$(document).ready(function(){
-	$(".gallery").hide();
-	$("#upload-image").click(function(){
-		$(".gallery").show();
-	});
-});
-
-// function showGallery() {
-// 	// var gallery = document.getElementById("gallery");
-// 	// gallery.style.visibility = 'visible';
-// 	debugger;
-
-// }

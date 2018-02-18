@@ -37,7 +37,6 @@
 		<div class="form-box">
 			<form name ="add-outfit-form">
 				<!-- Drop down menu for the clothing types-->
-				<br>
 				Clothing Type:<br>
 				<select name="clothing_types" required>
 					<option value="" selected disbaled></option>
@@ -47,7 +46,6 @@
 					<option value="business">Business</option>
 					<option value="swim">Swim</option>
 				</select>
-				<br>
 				<br>
 
 				<!-- Drop down menu for pre-defined tags -->
@@ -67,64 +65,18 @@
 					<option value="pajamas">Pajamas</option>
 				</select>
 				<br>
-				<br>
 
 				<!-- Color picker -->
 				Color:<br>
-				<div>
-					<input type="radio" id="color1" name="color" value="white">
-					<label for="color1">White</label>
-					<input type="radio" id="color2" name="color" value="grey">
-					<label for="color2">Grey</label>
-					<input type="radio" id="color3" name="color" value="black">
-					<label for="color3">Black</label>
-					<input type="radio" id="color4" name="color" value="red">
-					<label for="color4">Red</label>
-					<input type="radio" id="color5" name="color" value="orange">
-					<label for="color5">Orange</label>
-					<input type="radio" id="color6" name="color" value="yellow">
-					<label for="color6">Yellow</label>
-					<input type="radio" id="color7" name="color" value="green">
-					<label for="color7">Green</label>
-					<input type="radio" id="color8" name="color" value="blue">
-					<label for="color8">Blue</label>
-					<input type="radio" id="color9" name="color" value="purple">
-					<label for="color9">Purple</label>
-				</div>
-				<br>
-
-				Pattern? <br>
-				<div>
-					<input type="radio" id = "yes-pattern" name="pattern" value = "yes">
-					<label for="yes-pattern">Yes</label>
-					<input type="radio" id = "no-pattern" name="pattern" value = "no">
-					<label for="no-pattern">No</label>
-				</div>
-				<br>
-
-				Brand Name (optional): <br>
-				<input type="text" name="brand">
-				<br>
+				<input name="color-picker" type="color">
 				<br>
 
 				<!-- Button to upload image of clothing (pre-selected) -->
-				<button type="button" id="upload-image"> 
-					Choose Image 
-				</button>
-
-				<!-- image gallery of pre selected outfits -->
-				<div class="gallery"> 
-					<img id="top-image" src="images/generic_top.jpg">
-					<img id="bottom-image" src="images/generic_bottom.jpg">
-					<img id="dress-image" src="images/generic_dress.jpg">
-					<img id="business-image" src="images/generic_business.jpg">
-					<img id="swim-image" src="images/generic_swim.jpg">
-				</div>
-				<br>
-				<br>
+				<button type="button" onclick="showGallery()"> Upload Image </button>
 
 				<!-- Button for submitting outfit -->
 				<input type="submit" value="Add to Closet" onclick="addOutfitConfirmation()"> 
+
 				<!-- Buton to cancel -->
 				<!-- TODO: add styling to make it look like a button -->
 				<div class="btn-cancel">
@@ -137,10 +89,6 @@
 
 	</div>
 
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="addoutfit.js"></script>
 	<script src="headermenu.js"></script>
-
 </body>
 </html>
