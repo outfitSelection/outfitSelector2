@@ -28,3 +28,28 @@
   .navbar-toggle:hover {
     background-color: blue;
   }
+
+div.scrollmenu {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  margin: 10px;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu img {
+    display: inline-block;
+    color: white;
+    padding: 14px;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
