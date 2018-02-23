@@ -71,6 +71,7 @@ a:hover{
   opacity: 0.5;
   color: black;
   filter: alpha(opacity=50);
+
 }
 
 .drawer#bottoms:hover {
@@ -180,10 +181,29 @@ a:hover{
 #tags {
 
   position: relative;
-  display: inline-block;
-  color: black;
-  font-size: 100px;
-  left: 300px;
+  left: 250px;
 
+}
+
+.tag {
+
+  position: relative;
+  display: inline;
+  height: 60px;
+  width: 120px;
+  margin-right: 20px;
+  color: black;
+  font-size: 15px;
+  border: none;
+  background-color: #add8e8;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  font-weight: bold;
+}
+
+.tag:hover {
+
+  opacity: 1.0;
+  filter: alpha(opacity=100);
 }
 

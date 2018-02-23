@@ -1,9 +1,10 @@
 function addtag(clicked_id) {
 
-    document.getElementById(clicked_id).addEventListener("click", function(){
-    document.getElementById("#tags").innerHTML = "Hello World";
-});
+	var tag;
+	tag = document.getElementById(clicked_id).innerHTML;
+	document.getElementById("tags").innerHTML = tag;
 
+    
 }
 
 function list() {
