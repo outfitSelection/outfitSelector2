@@ -23,7 +23,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="home.html">Home</a></li>
         <li><a href="closet.html">Closet</a></li>
         <li><a href="add.html">Add to Closet</a></li>
         <li><a href="create.html">Create an Outfit</a></li>
@@ -51,12 +51,13 @@
   <div class="row">
     <div class="col-sm-3 col-xs-3"></div>
     <div class="col-sm-3 col-xs-3">
-      <img src="images/weather.jpg" class="img-responsive" style="width:100%" alt="Image">
-      <p>Weather</p>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/34d02n118d49/santa-monica/?unit=us" data-label_1="SANTA MONICA" data-label_2="WEATHER" data-mode="Current" data-days="3" data-theme="tile_wood" >SANTA MONICA WEATHER</a>
+      <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+      </script>
     </div>
     <div class="col-sm-3 col-xs-3"> 
-      <img src="images/calendar.jpg" class="img-responsive" style="width:100%" alt="Image">
-      <p>Calendar</p>    
+       <iframe src="https://calendar.google.com/calendar/embed?src=u.northwestern.edu_s0bv7tj3uekp9mni4ileieaka4%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="700" height="500" frameborder="0" scrolling="no"></iframe>
     </div>
     <div class="col-sm-3 col-xs-3"></div>
 <!--     <div class="col-sm-4">
