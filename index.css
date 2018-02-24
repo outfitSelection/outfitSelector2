@@ -12,44 +12,44 @@
       padding: 25px;
     }
     
-  .carousel-inner img {
+    .carousel-inner img {
       width: 100%; /* Set width to 100% */
       margin: auto;
       min-height:200px;
-  }
-
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; 
     }
-  }
 
-  .navbar-toggle:hover {
-    background-color: blue;
-  }
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none; 
+      }
+    }
 
-div.scrollmenu {
-  background-color: white;
-  overflow: auto;
-  white-space: nowrap;
-  margin: 10px;
-}
+    .navbar-toggle:hover {
+      background-color: blue;
+    }
 
-div.scrollmenu a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-}
+    div.scrollmenu {
+      background-color: white;
+      overflow: auto;
+      white-space: nowrap;
+      margin: 10px;
+    }
 
-div.scrollmenu img {
-    display: inline-block;
-    color: white;
-    padding: 14px;
-}
+    div.scrollmenu a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+    }
 
-div.scrollmenu a:hover {
-    background-color: #add8e8;
-}
+    div.scrollmenu img {
+      display: inline-block;
+      color: white;
+      padding: 14px;
+    }
+
+    div.scrollmenu img:hover {
+      background-color: #add8e8;
+    }
