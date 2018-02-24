@@ -11,55 +11,73 @@
 </header>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="closet.html">Closet</a></li>
+          <li><a href="addoutfit.html">Add to Closet</a></li>
+          <li><a href="create.html">Create an Outfit</a></li>
+          <li><a href="laundry.html">Laundry Basket</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Joe Schmoe</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="closet.html">Closet</a></li>
-        <li><a href="addoutfit.html">Add to Closet</a></li>
-        <li><a href="create.html">Create an Outfit</a></li>
-        <li><a href="laundry.html">Laundry Basket</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Joe Schmoe</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
 
-<div class="scrollmenu">
-  <a href="#"><img src="images/outfit1.jpg"></a>
-  <a href="#"><img src="images/outfit2.jpg"></a>
-  <a href="#"><img src="images/outfit3.jpg"></a>
-  <a href="#"><img src="images/outfit4.jpg"></a>
-  <a href="#"><img src="images/outfit5.jpg"></a>
-  <a href="#"><img src="images/outfit6.jpg"></a>
-  ...
-</div>
+  <!-- Suggested outfits -->
+  <div class="scrollmenu">
+    <a href="#"><img src="images/outfit1.jpg"></a>
+    <a href="#"><img src="images/outfit2.jpg"></a>
+    <a href="#"><img src="images/outfit3.jpg"></a>
+    <a href="#"><img src="images/outfit4.jpg"></a>
+    <a href="#"><img src="images/outfit5.jpg"></a>
+    <a href="#"><img src="images/outfit6.jpg"></a>
+  </div>
   
-<div class="container text-center">    
-  <h3>Your Daily Oufit Planner!</h3><br>
-  <div class="row">
-    <div class="col-sm-3 col-xs-3"></div>
-    <div class="col-sm-3 col-xs-3">
-      <a class="weatherwidget-io" href="https://forecast7.com/en/34d02n118d49/santa-monica/?unit=us" data-label_1="SANTA MONICA" data-label_2="WEATHER" data-mode="Current" data-days="3" data-theme="tile_wood" >SANTA MONICA WEATHER</a>
-      <script>
-      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-      </script>
-    </div>
-    <div class="col-sm-3 col-xs-3"> 
-       <iframe src="https://calendar.google.com/calendar/embed?title=My%20Schedule&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=u.northwestern.edu_s0bv7tj3uekp9mni4ileieaka4%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </div>
-    <div class="col-sm-3 col-xs-3"></div>
+  <div class="container text-center">    
+    <h3>Your Daily Oufit Planner!</h3><br>
+    <div class="row">
+
+      <div class="col-sm-3 col-xs-3">
+        
+      </div>
+
+      <div class="col-sm-3 col-xs-3">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/34d02n118d49/santa-monica/?unit=us" data-label_1="SANTA MONICA" data-label_2="WEATHER" data-mode="Current" data-days="3" data-theme="tile_wood">
+          SANTA MONICA WEATHER
+        </a>
+        <!-- inline JS for weather widget -->
+        <script>
+          !function(d,s,id){
+            var js,fjs = d.getElementsByTagName(s)[0];
+            if(!d.getElementById(id)){
+              js = d.createElement(s);
+              js.id = id;
+              js.src ='https://weatherwidget.io/js/widget.min.js';
+              fjs.parentNode.insertBefore(js,fjs);
+            }
+          }
+          (document,'script','weatherwidget-io-js');
+          </script>
+        </div>
+
+        <div class="col-sm-3 col-xs-3"> 
+         <iframe src="https://calendar.google.com/calendar/embed?title=My%20Schedule&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=u.northwestern.edu_s0bv7tj3uekp9mni4ileieaka4%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FChicago" style="border-width:0" width="auto" height="600" frameborder="0" scrolling="no"></iframe>
+       </div>
+
+       <div class="col-sm-3 col-xs-3"></div>
 <!--     <div class="col-sm-4">
       <div class="well">
        <p>Some text..</p>
