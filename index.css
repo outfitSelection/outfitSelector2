@@ -18,13 +18,7 @@
       min-height:200px;
     }
 
-    /* Hide the carousel text when the screen is less than 600 pixels wide */
-    @media (max-width: 600px) {
-      .carousel-caption {
-        display: none; 
-      }
-    }
-
+   
     .navbar-toggle:hover {
       background-color: blue;
     }
@@ -42,6 +36,13 @@
       text-align: center;
       padding: 14px;
       text-decoration: none;
+    }
+
+    div.scrollmenu div {
+      display: inline-block;
+      color: black;
+      font-weight: bold;
+      padding: 14px;
     }
 
     div.scrollmenu img {
