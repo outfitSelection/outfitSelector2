@@ -42,12 +42,12 @@ button:hover {
 
 #submit-button{
   background-color: #2471a3;
-  float:right;
+  float:left;
 }
 
 #cancel-button{
   background-color: red;
-  float:left;
+  float:right;
 }
 
 .required {
