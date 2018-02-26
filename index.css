@@ -5,6 +5,10 @@
       background-color: #add8e8; 
       border-color: lightgrey;
     }
+
+    #today_suggestions{
+      margin-left: 20px;
+    }
     
     /* Add a gray background color and some padding to the footer */
     footer {
