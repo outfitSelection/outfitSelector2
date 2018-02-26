@@ -1,145 +1,135 @@
 <html>
-
-<head>
-	<title>Add To Closet</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="closet.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="closet.js"></script>
-</head>
-
 <header>
 	<link rel="stylesheet" type="text/css" href="home.css"/>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
 </header>
-
 <body>
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>                        
-				</button>
-				<a class="navbar-brand" href="index.html">Logo</a>
+	<div id="screen">
+		<div id="head-bar">
+			<div class="hamburger-menu">
+				<button class="dropdownbtn" onclick="hamburger()">&#9776</button>
+
+				<div id="dropdown-menu" class="dropdown-list">
+					<a href="index.html">Home</a>
+					<a href="addoutfit.html">Add to Closet</a>
+					<a href="closet.html">My Closet</a>
+				</div>
 			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="closet.html">Closet</a></li>
-					<li class="active"><a href="addoutfit.html">Add to Closet</a></li>
-					<li><a href="create.html">Create an Outfit</a></li>
-					<li><a href="laundry.html">Laundry Basket</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Joe Schmoe</a></li>
-				</ul>
+
+			<div class="title">
+				Add to Closet
 			</div>
+
+			<div class="account-menu">
+
+				<button class="profilebtn" onclick="profile()"><img src="images/blankuser.png" alt="userimage">Username</button>
+
+				<div id="dropdown-profile" class="dropdown-list-profile">
+					<a href="settings.html">Settings</a>
+					<a href="profile.html">My Profile</a>
+				</div>
+			</div>
+
 		</div>
-	</nav>
 
-	<!-- The Form Section of the page-->
-	<div class="form-box">
-		<form name ="add-outfit-form">
-			<!-- Drop down menu for the clothing types-->
-			<br>
-			*Clothing Type:<br>
-			<select name="clothing_types" required>
-				<option value="" selected disbaled></option>
-				<option value="tops">Top</option>
-				<option value="bottoms">Bottom</option>
-				<option value="dresses">Dress</option>
-				<option value="business">Business</option>
-				<option value="swim">Swim</option>
-			</select>
-			<br>
-			<br>
+		<!-- The Form Section of the page-->
+		<div class="form-box">
+			<form name ="add-outfit-form">
+				<!-- Drop down menu for the clothing types-->
+				<br>
+				*Clothing Type:<br>
+				<select name="clothing_types" required>
+					<option value="" selected disbaled></option>
+					<option value="tops">Top</option>
+					<option value="bottoms">Bottom</option>
+					<option value="dresses">Dress</option>
+					<option value="business">Business</option>
+					<option value="swim">Swim</option>
+				</select>
+				<br>
+				<br>
 
-			<!-- Drop down menu for pre-defined tags -->
-			Tags: <br>
-			<div>
-				<label><input type="checkbox" name="tags">Summer</label>
-				<label><input type="checkbox" name="tags">Winter</label>
-				<label><input type="checkbox" name="tags">Spring</label>
-				<label><input type="checkbox" name="tags">Fall</label>
-				<label><input type="checkbox" name="tags">Rainy</label>
-				<label><input type="checkbox" name="tags">Workout</label>
-				<label><input type="checkbox" name="tags">Casual</label>
-				<label><input type="checkbox" name="tags">Formal</label>
-				<label><input type="checkbox" name="tags">Experimental</label>
-				<label><input type="checkbox" name="tags">Lounge</label>
-				<label><input type="checkbox" name="tags">Pajamas</label>
-			</div>
-			<br>
+				<!-- Drop down menu for pre-defined tags -->
+				Tags: <br>
+				<div>
+					<label><input type="checkbox" name="tags">Summer</label>
+					<label><input type="checkbox" name="tags">Winter</label>
+					<label><input type="checkbox" name="tags">Spring</label>
+					<label><input type="checkbox" name="tags">Fall</label>
+					<label><input type="checkbox" name="tags">Rainy</label>
+					<label><input type="checkbox" name="tags">Workout</label>
+					<label><input type="checkbox" name="tags">Casual</label>
+					<label><input type="checkbox" name="tags">Formal</label>
+					<label><input type="checkbox" name="tags">Experimental</label>
+					<label><input type="checkbox" name="tags">Lounge</label>
+					<label><input type="checkbox" name="tags">Pajamas</label>
+				</div>
+				<br>
 
-			<!-- Color picker -->
-			Color:<br>
-			<div>
-				<input type="radio" id="color1" name="color" value="white">
-				<label for="color1">White</label>
-				<input type="radio" id="color2" name="color" value="grey">
-				<label for="color2">Grey</label>
-				<input type="radio" id="color3" name="color" value="black">
-				<label for="color3">Black</label>
-				<input type="radio" id="color4" name="color" value="red">
-				<label for="color4">Red</label>
-				<input type="radio" id="color5" name="color" value="orange">
-				<label for="color5">Orange</label>
-				<input type="radio" id="color6" name="color" value="yellow">
-				<label for="color6">Yellow</label>
-				<input type="radio" id="color7" name="color" value="green">
-				<label for="color7">Green</label>
-				<input type="radio" id="color8" name="color" value="blue">
-				<label for="color8">Blue</label>
-				<input type="radio" id="color9" name="color" value="purple">
-				<label for="color9">Purple</label>
-			</div>
-			<br>
+				<!-- Color picker -->
+				Color:<br>
+				<div>
+					<input type="radio" id="color1" name="color" value="white">
+					<label for="color1">White</label>
+					<input type="radio" id="color2" name="color" value="grey">
+					<label for="color2">Grey</label>
+					<input type="radio" id="color3" name="color" value="black">
+					<label for="color3">Black</label>
+					<input type="radio" id="color4" name="color" value="red">
+					<label for="color4">Red</label>
+					<input type="radio" id="color5" name="color" value="orange">
+					<label for="color5">Orange</label>
+					<input type="radio" id="color6" name="color" value="yellow">
+					<label for="color6">Yellow</label>
+					<input type="radio" id="color7" name="color" value="green">
+					<label for="color7">Green</label>
+					<input type="radio" id="color8" name="color" value="blue">
+					<label for="color8">Blue</label>
+					<input type="radio" id="color9" name="color" value="purple">
+					<label for="color9">Purple</label>
+				</div>
+				<br>
 
-			Pattern? <br>
-			<div>
-				<input type="radio" id = "yes-pattern" name="pattern" value = "yes">
-				<label for="yes-pattern">Yes</label>
-				<input type="radio" id = "no-pattern" name="pattern" value = "no">
-				<label for="no-pattern">No</label>
-			</div>
-			<br>
+				Pattern? <br>
+				<div>
+					<input type="radio" id = "yes-pattern" name="pattern" value = "yes">
+					<label for="yes-pattern">Yes</label>
+					<input type="radio" id = "no-pattern" name="pattern" value = "no">
+					<label for="no-pattern">No</label>
+				</div>
+				<br>
 
-			Brand Name: <br>
-			<input type="text" name="brand">
-			<br>
-			<br>
+				Brand Name: <br>
+				<input type="text" name="brand">
+				<br>
+				<br>
 
-			<!--Upload image-->
-			Upload Image: <br>
-			<input type="file" id="myFile" multiple size="50" onchange="myFunction()">
-			<br>
-			<p> *required </p>
-			<br>
-			<br>
-			<!-- Button to upload image of clothing (pre-selected) -->
-
-
-			<!-- Button for submitting outfit -->
-			<input type="submit" value="Add to Closet" onclick="addOutfitConfirmation()"> 
-			<!-- Buton to cancel -->
-			<!-- TODO: add styling to make it look like a button -->
-			<div class="btn-cancel">
-				<a href="home.html"> Cancel </a>
-			</div>
+				<!--Upload image-->
+				Upload Image: <br>
+				<input type="file" id="myFile" multiple size="50" onchange="myFunction()">
+				<br>
+				<p> *required </p>
+				<br>
+				<br>
+				<!-- Button to upload image of clothing (pre-selected) -->
 
 
+				<!-- Button for submitting outfit -->
+				<input type="submit" value="Add to Closet" onclick="addOutfitConfirmation()"> 
+				<!-- Buton to cancel -->
+				<!-- TODO: add styling to make it look like a button -->
+				<div class="btn-cancel">
+					<a href="home.html"> Cancel </a>
+				</div>
 
-		</form>
+
+
+			</form>
+		</div>
+
 	</div>
 
-</div>
-
-<script src="home.js"></script>
+	<script src="addoutfit.js"></script>
 </body>
 </html>
