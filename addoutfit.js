@@ -12,16 +12,8 @@ function addOutfitConfirmation () {
   return true;
 }
 
-
-// function showGallery() {
-//  // var gallery = document.getElementById("gallery");
-//  // gallery.style.visibility = 'visible';
-//  debugger;
-
-// }
-
 // function to upload images
-function myFunction(){
+function uploadFile(){
     var x = document.getElementById("myFile");
     var txt = "";
     if ('files' in x) {

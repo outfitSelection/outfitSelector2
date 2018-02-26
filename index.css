@@ -18,7 +18,7 @@
       min-height:200px;
     }
 
-   
+    
     .navbar-toggle:hover {
       background-color: blue;
     }
@@ -120,10 +120,17 @@ span.psw {
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
         display: block;
         float: none;
-    }
-    .cancelbtn {
+      }
+      .cancelbtn {
         width: 100%;
+      }
     }
-}
