@@ -1,0 +1,118 @@
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #add8e8; 
+      border-color: lightgrey;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+    .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+    }
+
+   
+    .navbar-toggle:hover {
+      background-color: blue;
+    }
+
+    div.scrollmenu {
+      background-color: white;
+      overflow: auto;
+      white-space: nowrap;
+      margin: 10px;
+    }
+
+    div.scrollmenu a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+    }
+
+    div.scrollmenu div {
+      display: inline-block;
+      color: black;
+      font-weight: bold;
+      padding: 14px;
+    }
+
+    div.scrollmenu img {
+      display: inline-block;
+      color: white;
+      padding: 14px;
+    }
+
+    div.scrollmenu img:hover {
+      background-color: #add8e8;
+    }
+
+    /*Luke*/
+
+
+    #bar{
+    height:50px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding-bottom: 80px;
+    border-bottom: 3px solid black;
+}
+#select_all{
+    display: inline-block;
+    margin-left: 20px;
+    border-style: solid;
+    border-radius: 25px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    line-height: 37px;
+    font-size: 20px;
+    background-color: #add8e8;  
+}
+#delete{
+    display: inline-block;
+    margin-left: 20px;
+    border-style: solid;
+    border-radius: 25px;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    line-height: 37px;
+    font-size: 20px;
+    background-color: #add8e8;
+}
+
+
+.outfits{
+    position: relative;
+    display: inline;
+    width: 550px;
+    height: 240px;
+}
+.picture{
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#box{
+    position: absolute;
+    /*display:inline; */
+    bottom: -90px;
+    left: 35px;
+    width: 40px;
+    height: 40px;
+}
