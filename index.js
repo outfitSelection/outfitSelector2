@@ -2,6 +2,20 @@ function profile() {
     document.getElementById("dropdown-profile").classList.toggle("showProfile");
 }
 
+function login () {
+    var username, password;
+    username = document.forms["login-form"]["uname"].value;
+    password = document.forms["login-form"]["psw"].value;
+    if (username == "jschmoe" && password == "learn2bootstrap!") {
+        window.location.href = "homeLoggedIn.html";
+        return true;
+    }
+    else {
+        alert("Incorrect username or password");
+        return false;
+    }
+}
+
 
 window.onclick = function(event2) {
   if (!event2.target.matches('.profilebtn')) {
