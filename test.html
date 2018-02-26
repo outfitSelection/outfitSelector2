@@ -2,14 +2,20 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="test.js"></script>
+   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="test.css">
+
+
 </head>
 <header>
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="test.css">
 </header>
-<body>
+<body onload="list()">
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -23,68 +29,35 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="closet.html">Closet</a></li>
+        <li><a href="add.html">Add to Closet</a></li>
+        <li><a href="create.html">Create an Outfit</a></li>
+        <li><a href="laundry.html">Laundry Basket</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Joe Schmoe</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-
-
-
-
-
-
-  <div id="bar">
-    <div class = "options">
-      <div id="select_all">
-        Select All
+    <div id="tags">
+      <div id="filter">
+      filter by:
       </div>
-      <div id="delete">
-        Delete
-      </div>
-      <div id="laundry">
-        Move to Laundry Basket
-      </div>
-
+      <button class="tag" id="summerT">Summer</button>
+      <button class="tag" id="winterT">Winter</button>
+      <button class="tag" id="springT">Spring</button>
+      <button class="tag" id="fallT">Fall</button>
+      <button class="tag" id="rainydayT">Rainy Day</button>
+      <button class="tag" id="workoutT">Workout</button>
+      <button class="tag" id="casualT">Casual</button>
+      <button class="tag" id="formalT">Formal</button>
+      <button class="tag" id="experimentalT">Experimental</button>
+      <button class="tag" id="loungeT" >Lounge</button>
+      <button class="tag" id="pajamasT">Pajamas</button>
     </div>
-  </div>
 
 
-  <div class = "outfits">
-    <img src = "images/shirt.jpg" class = "picture">
-    <img src = "images/checkbox.png" id = "box" onclick="checkmark()">
-  </div>
-  <div class = "outfits">
-    <img src = "images/shirt2.jpg" class = "picture">
-    <img src = "images/checkbox.png" id = "box">
-  </div>
-  <div class = "outfits">
-    <img src = "images/generic_top.jpg" class = "picture">
-    <img src = "images/unchecked.png" id= "box">
-  </div>
-  <div class = "outfits">
-    <img src = "images/top3.jpg" class = "picture">
-    <img src = "images/checkbox.png" id = "box">
-  </div>
-  <div class = "outfits">
-    <img src = "images/top4.jpg" class = "picture">
-    <img src = "images/unchecked.png" id = "box">
-  </div>
-  <div class = "outfits">
-    <img src = "images/top5.jpg" class = "picture">
-    <img src = "images/unchecked.png" id = "box">
-  </div>
-  
-
-
-
-
-<script src="home.js"></script>
-
+</body>
