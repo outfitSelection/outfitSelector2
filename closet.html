@@ -14,94 +14,94 @@
 </header>
 <body onload="list()">
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="closet.html">Closet</a></li>
+          <li><a href="addoutfit.html">Add to Closet</a></li>
+          <li><a href="create.html">Create an Outfit</a></li>
+          <li><a href="laundry.html">Laundry Basket</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Joe Schmoe</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="closet.html">Closet</a></li>
-        <li><a href="addoutfit.html">Add to Closet</a></li>
-        <li><a href="create.html">Create an Outfit</a></li>
-        <li><a href="laundry.html">Laundry Basket</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Joe Schmoe</a></li>
-      </ul>
-    </div>
+  </nav>
+
+  <div id="search">
+    <input type="text" id="myInput" onkeyup="searchClothes()" placeholder="Search for clothes...">
   </div>
-</nav>
 
-    <div id="search">
-      <input type="text" id="myInput" onkeyup="searchClothes()" placeholder="Search for clothes...">
-    </div>
+  <div id="myUL">
+    <button id="summer" onclick="addtag(this.id)">Summer</button>
+    <button id="winter" onclick="addtag(this.id)">Winter</button>
+    <button id="spring" onclick="addtag(this.id)">Spring</button>
+    <button id="fall" onclick="addtag(this.id)">Fall</button>
+    <button id="rainyday" onclick="addtag(this.id)">Rainy Day</button>
+    <button id="workout" onclick="addtag(this.id)">Workout</button>
+    <button id="casual" onclick="addtag(this.id)">Casual</button>
+    <button id="formal" onclick="addtag(this.id)">Formal</button>
+    <button id="experimental" onclick="addtag(this.id)">Experimental</button>
+    <button id="lounge" onclick="addtag(this.id)">Lounge</button>
+    <button id="pajamas" onclick="addtag(this.id)">Pajamas</button>
+  </div>
 
-    <div id="myUL">
-      <button id="summer" onclick="addtag(this.id)">Summer</button>
-      <button id="winter" onclick="addtag(this.id)">Winter</button>
-      <button id="spring" onclick="addtag(this.id)">Spring</button>
-      <button id="fall" onclick="addtag(this.id)">Fall</button>
-      <button id="rainyday" onclick="addtag(this.id)">Rainy Day</button>
-      <button id="workout" onclick="addtag(this.id)">Workout</button>
-      <button id="casual" onclick="addtag(this.id)">Casual</button>
-      <button id="formal" onclick="addtag(this.id)">Formal</button>
-      <button id="experimental" onclick="addtag(this.id)">Experimental</button>
-      <button id="lounge" onclick="addtag(this.id)">Lounge</button>
-      <button id="pajamas" onclick="addtag(this.id)">Pajamas</button>
-    </div>
-
-    <div id="tags">
-      <button class="tag" id="summerT">Summer</button>
-      <button class="tag" id="winterT">Winter</button>
-      <button class="tag" id="springT">Spring</button>
-      <button class="tag" id="fallT">Fall</button>
-      <button class="tag" id="rainydayT">Rainy Day</button>
-      <button class="tag" id="workoutT">Workout</button>
-      <button class="tag" id="casualT">Casual</button>
-      <button class="tag" id="formalT">Formal</button>
-      <button class="tag" id="experimentalT">Experimental</button>
-      <button class="tag" id="loungeT" >Lounge</button>
-      <button class="tag" id="pajamasT">Pajamas</button>
-    </div>
+  <div id="tags">
+    <button class="tag" id="summerT">Summer</button>
+    <button class="tag" id="winterT">Winter</button>
+    <button class="tag" id="springT">Spring</button>
+    <button class="tag" id="fallT">Fall</button>
+    <button class="tag" id="rainydayT">Rainy Day</button>
+    <button class="tag" id="workoutT">Workout</button>
+    <button class="tag" id="casualT">Casual</button>
+    <button class="tag" id="formalT">Formal</button>
+    <button class="tag" id="experimentalT">Experimental</button>
+    <button class="tag" id="loungeT" >Lounge</button>
+    <button class="tag" id="pajamasT">Pajamas</button>
+  </div>
 
 
-    <div id="closet">
-      <a href="tops.html">
-        <div class="drawer" id="tops">
-          Tops
-        </div>
-      </a>
-      <a href="bottoms.html">
-        <div class="drawer" id="bottoms">
-          Bottoms
-        </div>
-      </a>
-      <a href="dresses.html">
-        <div class="drawer" id="dresses">
-          Dresses
-        </div>
-      </a>
-      <a href="business.html">
-        <div class="drawer" id="business">
-          Business
-        </div>
-      </a>
-      <a href="swim.html">
-        <div class="drawer" id="swim">
-          Swim
-        </div>
-      </a>
-    </div>
+  <div id="closet">
+    <a href="tops.html">
+      <div class="drawer" id="tops">
+        Tops
+      </div>
+    </a>
+    <a href="bottoms.html">
+      <div class="drawer" id="bottoms">
+        Bottoms
+      </div>
+    </a>
+    <a href="dresses.html">
+      <div class="drawer" id="dresses">
+        Dresses
+      </div>
+    </a>
+    <a href="business.html">
+      <div class="drawer" id="business">
+        Business
+      </div>
+    </a>
+    <a href="swim.html">
+      <div class="drawer" id="swim">
+        Swim
+      </div>
+    </a>
+  </div>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
+  <footer class="container-fluid text-center">
+    <p>Footer Text</p>
+  </footer>
 
 </body>

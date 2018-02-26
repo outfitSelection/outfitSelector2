@@ -5,19 +5,21 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="closet.css">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="closet.js"></script>
+	<script src="addoutfit.js"></script>
 </head>
 
 <header>
-	<link rel="stylesheet" type="text/css" href="home.css"/>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-	rel="stylesheet">
+	<link rel="stylesheet" href="addoutfit.css">
 </header>
 
 <body>
+	<!-- Bootstrap nav bar -->
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -44,11 +46,13 @@
 	</nav>
 
 	<!-- The Form Section of the page-->
-	<div class="form-box">
-		<form name ="add-outfit-form">
-			<!-- Drop down menu for the clothing types-->
+	<form name ="add-outfit-form">
+		<div class="container">
+			<!-- Drop down menu for the clothing types -->
 			<br>
-			*Clothing Type:<br>
+			<label for="clothing">*Clothing Type:</label>
+			<!-- *Clothing Type: -->
+			<br>
 			<select name="clothing_types" required>
 				<option value="" selected disbaled></option>
 				<option value="tops">Top</option>
@@ -62,24 +66,24 @@
 
 			<!-- Drop down menu for pre-defined tags -->
 			Tags: <br>
-			<div>
-				<label><input type="checkbox" name="tags">Summer</label>
-				<label><input type="checkbox" name="tags">Winter</label>
-				<label><input type="checkbox" name="tags">Spring</label>
-				<label><input type="checkbox" name="tags">Fall</label>
-				<label><input type="checkbox" name="tags">Rainy</label>
-				<label><input type="checkbox" name="tags">Workout</label>
-				<label><input type="checkbox" name="tags">Casual</label>
-				<label><input type="checkbox" name="tags">Formal</label>
-				<label><input type="checkbox" name="tags">Experimental</label>
-				<label><input type="checkbox" name="tags">Lounge</label>
-				<label><input type="checkbox" name="tags">Pajamas</label>
+			<div class="tags-container">
+				<label><input type="checkbox" name="tags"> Summer </label>
+				<label><input type="checkbox" name="tags"> Winter </label>
+				<label><input type="checkbox" name="tags"> Spring </label>
+				<label><input type="checkbox" name="tags"> Fall </label>
+				<label><input type="checkbox" name="tags"> Rainy </label>
+				<label><input type="checkbox" name="tags"> Workout </label>
+				<label><input type="checkbox" name="tags"> Casual </label>
+				<label><input type="checkbox" name="tags"> Formal </label>
+				<label><input type="checkbox" name="tags"> Experimental </label>
+				<label><input type="checkbox" name="tags"> Lounge </label>
+				<label><input type="checkbox" name="tags"> Pajamas </label>
 			</div>
 			<br>
 
 			<!-- Color picker -->
 			Color:<br>
-			<div>
+			<div class="color-container">
 				<input type="radio" id="color1" name="color" value="white">
 				<label for="color1">White</label>
 				<input type="radio" id="color2" name="color" value="grey">
@@ -102,7 +106,7 @@
 			<br>
 
 			Pattern? <br>
-			<div>
+			<div class="pattern-container">
 				<input type="radio" id = "yes-pattern" name="pattern" value = "yes">
 				<label for="yes-pattern">Yes</label>
 				<input type="radio" id = "no-pattern" name="pattern" value = "no">
@@ -122,24 +126,16 @@
 			<p> *required </p>
 			<br>
 			<br>
-			<!-- Button to upload image of clothing (pre-selected) -->
-
 
 			<!-- Button for submitting outfit -->
 			<input type="submit" value="Add to Closet" onclick="addOutfitConfirmation()"> 
+
 			<!-- Buton to cancel -->
 			<!-- TODO: add styling to make it look like a button -->
 			<div class="btn-cancel">
-				<a href="home.html"> Cancel </a>
+				<a href="homeLogginIn.html"> Cancel </a>
 			</div>
-
-
-
-		</form>
-	</div>
-
-</div>
-
-<script src="home.js"></script>
+		</div>
+	</form>
 </body>
 </html>
