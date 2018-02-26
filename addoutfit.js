@@ -13,7 +13,7 @@ function addOutfitConfirmation () {
 }
 
 // function to upload images
-function myFunction(){
+function uploadFile(){
     var x = document.getElementById("myFile");
     var txt = "";
     if ('files' in x) {

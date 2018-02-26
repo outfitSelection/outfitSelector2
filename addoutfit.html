@@ -121,20 +121,20 @@
 
 			<!--Upload image-->
 			Upload Image: <br>
-			<input type="file" id="myFile" multiple size="50" onchange="myFunction()">
+			<input type="file" id="myFile" multiple size="50" onchange="uploadFile()">
 			<br>
 			<p> *required </p>
 			<br>
 			<br>
 
 			<!-- Button for submitting outfit -->
-			<input type="submit" value="Add to Closet" onclick="addOutfitConfirmation()"> 
+			<button id="submit-button" onclick="addOutfitConfirmation()"> Add to Closet
+			</button>
 
 			<!-- Buton to cancel -->
-			<!-- TODO: add styling to make it look like a button -->
-			<div class="btn-cancel">
-				<a href="homeLogginIn.html"> Cancel </a>
-			</div>
+			<!-- Button for submitting outfit -->
+			<button id="cancel-button" onclick="javascript:window.location.href='homeLoggedIn.html'""> Cancel
+			</button>
 		</div>
 	</form>
 </body>
