@@ -1,11 +1,3 @@
-function addtag(clicked_id) {
-
-	var tag;
-	tag = document.getElementById(clicked_id).innerHTML;
-	document.getElementById("tags").innerHTML = tag;
-
-    
-}
 
 function list() {
 
@@ -35,3 +27,10 @@ function searchClothes() {
         }
     }
 }
+
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $(this).toggleClass('active');
+    });
+});
