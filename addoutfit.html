@@ -1,5 +1,5 @@
 <html>
-  
+
 <head>
 	<title>Add To Closet</title>
 	<meta charset="utf-8">
@@ -52,37 +52,43 @@
 			<label for="clothing" class="required">*Clothing Type:</label>
 			<!-- *Clothing Type: -->
 			<br>
-			<select name="clothing_types" required>
-				<option value="" selected disbaled></option>
-				<option value="tops">Top</option>
-				<option value="bottoms">Bottom</option>
-				<option value="dresses">Dress</option>
-				<option value="business">Business</option>
-				<option value="swim">Swim</option>
-			</select>
+			<div class="clothing-container">
+				<select name="clothing_types" required>
+					<option value="" selected disbaled></option>
+					<option value="tops">Top</option>
+					<option value="bottoms">Bottom</option>
+					<option value="dresses">Dress</option>
+					<option value="business">Business</option>
+					<option value="swim">Swim</option>
+				</select>
+			</div>
 			<br>
 			<br>
 
 			<!-- Drop down menu for pre-defined tags -->
-			Tags: <br>
 			<div class="tags-container">
-				<label><input type="checkbox" name="tags"> Summer </label>
-				<label><input type="checkbox" name="tags"> Winter </label>
-				<label><input type="checkbox" name="tags"> Spring </label>
-				<label><input type="checkbox" name="tags"> Fall </label>
-				<label><input type="checkbox" name="tags"> Rainy </label>
-				<label><input type="checkbox" name="tags"> Workout </label>
-				<label><input type="checkbox" name="tags"> Casual </label>
-				<label><input type="checkbox" name="tags"> Formal </label>
-				<label><input type="checkbox" name="tags"> Experimental </label>
-				<label><input type="checkbox" name="tags"> Lounge </label>
-				<label><input type="checkbox" name="tags"> Pajamas </label>
+				Tags: <br>
+
+				<div class="tags-seasons">
+					<label><input type="checkbox" name="tags"> Summer </label><br>
+					<label><input type="checkbox" name="tags"> Winter </label><br>
+					<label><input type="checkbox" name="tags"> Spring </label><br>
+					<label><input type="checkbox" name="tags"> Fall </label><br>
+				</div>
+				<div class="tags-formality">
+					<label><input type="checkbox" name="tags"> Workout </label><br>
+					<label><input type="checkbox" name="tags"> Casual </label><br>
+					<label><input type="checkbox" name="tags"> Formal </label><br>
+					<label><input type="checkbox" name="tags"> Experimental </label><br>
+					<label><input type="checkbox" name="tags"> Lounge </label><br>
+					<label><input type="checkbox" name="tags"> Pajamas </label><br>
+				</div>
 			</div>
 			<br>
 
 			<!-- Color picker -->
-			Color:<br>
 			<div class="color-container">
+				Color:<br>
 				<input type="radio" id="color1" name="color" value="white">
 				<label for="color1">White</label>
 				<input type="radio" id="color2" name="color" value="grey">
@@ -104,8 +110,8 @@
 			</div>
 			<br>
 
-			Pattern? <br>
 			<div class="pattern-container">
+				Pattern? <br>
 				<input type="radio" id = "yes-pattern" name="pattern" value = "yes">
 				<label for="yes-pattern">Yes</label>
 				<input type="radio" id = "no-pattern" name="pattern" value = "no">
@@ -113,27 +119,33 @@
 			</div>
 			<br>
 
-			Brand Name: <br>
-			<input type="text" name="brand">
+			<div class="brand-container">
+				Brand Name: <br>
+				<input type="text" name="brand">
+			</div>
 			<br>
 			<br>
 
 			<!--Upload image-->
-			Upload Image: <br>
-			<input type="file" id="myFile" multiple size="50" onchange="uploadFile()">
+			<div class="upload-container">
+				Upload Image: <br>
+				<input type="file" id="myFile" multiple size="50" onchange="uploadFile()">
+			</div>
 			<br>
 			<p class="required"> *required </p>
 			<br>
 			<br>
 
-			<!-- Button for submitting outfit -->
-			<button id="submit-button" onclick="addOutfitConfirmation()"> Add to Closet
-			</button>
+			<div class="buttons-container">
+				<!-- Button for submitting outfit -->
+				<button id="submit-button" onclick="addOutfitConfirmation()"> Add to Closet
+				</button>
 
-			<!-- Buton to cancel -->
-			<!-- Button for submitting outfit -->
-			<button id="cancel-button" onclick="javascript:window.location.href='homeloggedin.html'""> Cancel
-			</button>
+				<!-- Buton to cancel -->
+				<!-- Button for submitting outfit -->
+				<button id="cancel-button" onclick="javascript:window.location.href='homeloggedin.html'""> Cancel
+				</button>
+			</div>
 		</div>
 	</form>	
 </body>

@@ -43,13 +43,77 @@ button:hover {
 #submit-button{
   background-color: #2471a3;
   float:left;
+  clear:left;
+  margin-top:45px;
 }
 
 #cancel-button{
   background-color: red;
   float:right;
+  margin-top:45px;
+
 }
 
 .required {
   color: red;
+  margin-top:25px;
+  float:left;
+  clear:both;
 }
+
+/* Aligning the tags into columns */
+.tags-container{
+  float:left;
+  clear:both;
+  margin-top:25px;
+}
+.tags-seasons{
+  float:left;
+  margin-top:10px;
+}
+
+.tags-formality{
+  float:left;
+  clear:right;
+  margin-left:20px;
+  margin-top:10px;
+}
+
+.clothing-container{
+  float:left;
+  clear:both;
+}
+
+.color-container{
+  float:left;
+  clear:both;
+  margin-top:25px;
+
+}
+
+.pattern-container{
+  float:left;
+  clear:both;
+  margin-top:25px;
+
+}
+
+.brand-container{
+  width:600px;
+  float:left;
+  clear:both;
+  margin-top:25px;
+
+}
+
+.upload-container{
+  float:left;
+  clear:both;
+  margin-top:25px;
+
+}
+
+
+
+
+
