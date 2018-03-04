@@ -1,0 +1,16 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #add8e8; 
+  border-color: lightgrey;
+}
+
+.navbar-toggle:hover {
+  background-color: blue;
+}
+
+label{
+  font-weight: normal;
+
+}
