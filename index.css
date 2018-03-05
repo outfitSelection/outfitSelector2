@@ -22,9 +22,15 @@
       min-height:200px;
     }
 
-    
     .navbar-toggle:hover {
       background-color: blue;
+    }
+
+    .scroll-wrapper {
+      position: relative;
+      margin: 1em auto;
+      overflow-x: hidden;
+      overflow-y: hidden;
     }
 
     div.scrollmenu {
@@ -57,6 +63,24 @@
 
     div.scrollmenu img:hover {
       background-color: #add8e8;
+    }
+
+    .paddles {
+    }
+    .paddle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 3em;
+    }
+    .left-paddle {
+      left: 0;
+    }
+    .right-paddle {
+      right: 0;
+    }
+    .hidden {
+      display: none;
     }
 
     /*log in form*/

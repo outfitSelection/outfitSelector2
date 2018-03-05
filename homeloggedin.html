@@ -5,6 +5,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- <script type="text/javascript" src="paddles.js"></script> -->
 </head>
 
 <header>
@@ -37,23 +39,34 @@
     </div>
   </nav>
 
-    <div id="today_suggestions">
-      <h2>
-        Today's Suggestions
-      </h2>
-    </div>
+  <div id="today_suggestions">
+    <h2>
+      Today's Suggestions
+    </h2>
+  </div>
 
 
   <!-- Suggested outfits -->
-  <div class="scrollmenu">
-    <a href="selectedoutfit1.html"><img src="images/outfit1.jpg"></a>
-    <a href="selectedoutfit2.html"><img src="images/outfit2.jpg"></a>
-    <a href="selectedoutfit3.html"><img src="images/outfit3.jpg"></a>
-    <a href="selectedoutfit4.html"><img src="images/outfit4.jpg"></a>
-    <a href="selectedoutfit5.html"><img src="images/outfit5.jpg"></a>
-    <a href="selectedoutfit6.html"><img src="images/outfit6.jpg"></a>
-  </div>
+  <div class="scroll-wrapper">
+    <div class="scrollmenu" id="menu">
+      <a href="selectedoutfit1.html"><img class="outfit" src="images/outfit1.jpg"></a>
+      <a href="selectedoutfit2.html"><img class="outfit" src="images/outfit2.jpg"></a>
+      <a href="selectedoutfit3.html"><img class="outfit" src="images/outfit3.jpg"></a>
+      <a href="selectedoutfit4.html"><img class="outfit" src="images/outfit4.jpg"></a>
+      <a href="selectedoutfit5.html"><img class="outfit" src="images/outfit5.jpg"></a>
+      <a href="selectedoutfit6.html"><img class="outfit" src="images/outfit6.jpg"></a>
+    </div>
 
+    <!-- <div class="paddles">
+      <button class="left-paddle paddle hidden">
+        <
+      </button>
+      <button class="right-paddle paddle">
+        >
+      </button>
+    </div>
+
+  </div> -->
 
   <div class="container text-center">    
     <h3>Your Daily Oufit Planner!</h3><br>
@@ -76,14 +89,14 @@
             }
           }
           (document,'script','weatherwidget-io-js');
-          </script>
-        </div>
+        </script>
+      </div>
 
-        <div class="col-sm-3 col-xs-3"> 
-         <iframe src="https://calendar.google.com/calendar/embed?title=My%20Schedule&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=u.northwestern.edu_s0bv7tj3uekp9mni4ileieaka4%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FChicago" style="border-width:0" width="500" height="300" frameborder="0" scrolling="no"></iframe>
-       </div>
+      <div class="col-sm-3 col-xs-3"> 
+       <iframe src="https://calendar.google.com/calendar/embed?title=My%20Schedule&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=u.northwestern.edu_s0bv7tj3uekp9mni4ileieaka4%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FChicago" style="border-width:0" width="500" height="300" frameborder="0" scrolling="no"></iframe>
+     </div>
 
-       <div class="col-sm-3 col-xs-3"></div>
+     <div class="col-sm-3 col-xs-3"></div>
 <!--     <div class="col-sm-4">
       <div class="well">
        <p>Some text..</p>

@@ -16,7 +16,6 @@
 /*Closet page formatting*/
 
 #closet {
-
   position: relative;
   top: 50px;
 }
@@ -33,7 +32,8 @@
   background-image: url("images/drawer2.jpg");
   font-family: Papyrus, fantasy;
   text-decoration: none;
-  color: #4c230d;
+  /*color: #4c230d;*/
+  color:black;
   font-weight: bold;
 
 }
