@@ -96,3 +96,27 @@ $(document).ready(function(){
         }
     });
 });
+
+$(document).ready(function(){
+    $(".article").click(function(){
+        $(this).toggleClass('active');
+      })
+  })
+
+$(document).ready(function(){
+    $("#select_all").click(function(){
+        $('#clothes').children('div').each(function () {
+          $(this).toggleClass('active');
+        })
+      })
+  })
+
+$(document).ready(function(){
+    $("#delete").click(function(){
+        $('#clothes').children('div').each(function () {
+          if($(this).hasClass("active")){
+            document.getElementById(this.id).style.display = 'none';
+          }
+        })
+      })
+  })

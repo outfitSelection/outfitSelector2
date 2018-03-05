@@ -77,6 +77,11 @@
     position: relative;
     bottom: 5px;
 }
+
+#select_all:hover{
+
+    cursor: pointer;
+}
 #delete{
     display: inline-block;
     margin-left: 20px;
@@ -90,9 +95,12 @@
     background-color: #add8e8;
     position: relative;
     bottom: 5px;
-
 }
 
+#delete:hover{
+
+    cursor: pointer;
+}
 
 .outfits{
     position: relative;
@@ -212,6 +220,21 @@
 
 .article {
   display: inline-block;
+  margin: 3px;
+  border: solid 3px transparent;
+ 
+}
+
+.article.active, .article:active {
+
+  border: solid 3px;
+  border-color: green;
+}
+
+.article:hover {
+
+  cursor: pointer;
+
 }
 
 #accordion {
