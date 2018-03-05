@@ -169,6 +169,10 @@
   opacity: 0.5;
   filter: alpha(opacity=50);
   font-weight: bold;
+  background-image: url("images/emptybox.png");
+  background-repeat: no-repeat;
+  background-position: 20px 13px;
+  background-size: 30px;
 }
 
 .tag:hover {
@@ -185,10 +189,10 @@
   opacity: 1.0;
   filter: alpha(opacity=100);
   background-color: #add8e8;
-  background-image: url("images/checkmark.png");
+  background-image: url("images/checked.png");
   background-repeat: no-repeat;
-  background-position: 20px 20px;
-  background-size: 15px;
+  background-position: 20px 13px;
+  background-size: 30px;
 
 }
 
