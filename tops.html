@@ -36,16 +36,38 @@
     </div>
   </nav>
 
-
-
-<div id="tags">
-      <div id="filter">
-      filter by:
-      </div>
+<div id="filter">
+  filter by:
+</div>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse"  href="#collapse1">
+        Season</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body">    
+        <div class="tags">
       <button class="tag" id="summerT">Summer</button>
       <button class="tag" id="winterT">Winter</button>
       <button class="tag" id="springT">Spring</button>
       <button class="tag" id="fallT">Fall</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse"  href="#collapse2">
+        Style</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">      
+        <div class="tags">
       <button class="tag" id="rainydayT">Rainy Day</button>
       <button class="tag" id="workoutT">Workout</button>
       <button class="tag" id="casualT">Casual</button>
@@ -53,10 +75,13 @@
       <button class="tag" id="experimentalT">Experimental</button>
       <button class="tag" id="loungeT" >Lounge</button>
       <button class="tag" id="pajamasT">Pajamas</button>
+      </div>
     </div>
+    </div>
+  </div>
+</div> 
 
-
-
+ 
 
   <div id="bar">
     <div class = "options">
@@ -70,31 +95,40 @@
   </div>
 
 
+    <div id="clothes">
+      <div id="item1" class="summerT casualT article">
+        <img src = "images/summercasual.jpg">
+      </div>
+      <div id="item2" class="winterT formalT article">
+        <img src = "images/winterformal.jpg">
+      </div>
+      <div id="item3" class="springT casualT article">
+        <img src = "images/springcasual.jpg">
+      </div>
+      <div id="item4" class="springT rainydayT casualT article">
+        <img src = "images/springrainyday.jpg">
+      </div>
+      <div id="item5" class="fallT experimentalT article">
+        <img src = "images/fallexperimental.jpg">
+      </div>
+      <div id="item6" class="winterT experimentalT article">
+        <img src = "images/winterexperimental.jpg">
+      </div>
+      <div id="item7" class="winterT pajamasT article">
+        <img src = "images/winterpajamas.jpg">
+      </div>
+      <div id="item8" class="summerT pajamasT article">
+        <img src = "images/summerpajamas.jpg">
+      </div>
+      <div id="item9" class="summerT workoutT article">
+        <img src = "images/summerworkout.jpg">
+      </div>
+      <div id="item10" class="winterT workoutT article">
+        <img src = "images/winterworkout.jpg">
+      </div>
+    </div>
 
-  <div class = "outfits">
-    <img src = "images/shirt.jpg" class = "picture">
-    <img src = "images/unchecked.png" id = "box1" onmouseover = "this.style.cursor='pointer'" onclick="lasttry()">
-  </div>
-  <div class = "outfits">
-    <img src = "images/shirt2.jpg" class = "picture">
-    <img src = "images/checkbox.png" id = "box">
-  </div>
-  <div class = "outfits">
-    <img src = "images/generic_top.jpg" class = "picture">
-    <img src = "images/unchecked.png" id= "box">
-  </div>
-  <div class = "outfits">
-    <img src = "images/top3.jpg" class = "picture">
-    <img src = "images/checkbox.png" id = "box">
-  </div>
-  <div class = "outfits">
-    <img src = "images/top4.jpg" class = "picture">
-    <img src = "images/unchecked.png" id = "box">
-  </div>
-  <div class = "outfits">
-    <img src = "images/top5.jpg" class = "picture">
-    <img src = "images/unchecked.png" id = "box">
-  </div>
+ 
   
 
 

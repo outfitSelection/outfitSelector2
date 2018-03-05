@@ -42,9 +42,57 @@ function lasttry(){
 	}
 }
 
-
+///////////Filtering/////////////
 $(document).ready(function(){
-    $(".tag").click(function(){
+    $("button").click(function(){
         $(this).toggleClass('active');
+        var activeButtons = []
+      $('.tags').children('button').each(function () {
+        if($(this).hasClass("active")){
+          activeButtons.push(this.id);
+        }
+        if(!$(this).hasClass("active")){
+          var index = activeButtons.indexOf(this.id);
+          if (index > -1) {
+            activeButtons.splice(index, 1);
+          }
+        } 
+      });
+      
+        var toShow = [];
+      
+        if(activeButtons.length > 0){
+  
+          $('#clothes').children('div').each(function () {
+            var y = this.id;
+            var z = 1;
+            var classes = $(this).attr('class').split(' ');
+            var j;
+            for(j = 0; j < activeButtons.length; j++){
+              if(($.inArray(activeButtons[j], classes)) == -1){
+                z = -1;
+              }
+            }
+            if(z == 1){
+              toShow.push(y);
+            }
+          });
+          
+        }
+      
+        var k;
+        $('#clothes').children('div').each(function () {
+          document.getElementById(this.id).style.display = 'none';
+        });
+      
+        for(k = 0; k < toShow.length; k++){
+            document.getElementById(toShow[k]).style.display = 'inline-block';
+          }
+
+        if(toShow.length == 0 && activeButtons.length == 0){
+        	$('#clothes').children('div').each(function () {
+          document.getElementById(this.id).style.display = 'inline-block';
+        });
+        }
     });
 });
