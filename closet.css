@@ -11,8 +11,6 @@
     background-color: blue;
   }
 
-
-
 /*Closet page formatting*/
 
 #closet {
@@ -35,14 +33,11 @@
   /*color: #4c230d;*/
   color:black;
   font-weight: bold;
-
 }
 
 
 a:hover{
-
   text-decoration: none;
-
 }
 
 .drawer#tops:hover {
