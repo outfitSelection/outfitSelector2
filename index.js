@@ -21,7 +21,7 @@ document.getElementById("login").onclick = function() {
   username = document.getElementById("uname").value;
   password = document.getElementById("psw").value;
   if (username == "jdoe" && password == "asd") {
-    window.location.href = "homeLoggedIn.html";
+    window.location.href = "homeloggedin.html";
   }
   else {
     alert("Incorrect username or password");
