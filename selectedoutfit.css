@@ -12,4 +12,74 @@
 
 .header{
 	margin-left: 20px;
+	padding-bottom:20px;
+	float:left;
+}
+
+.outfit-container{
+	float:left;
+	clear:left;
+}
+
+.change-outfit{
+	position:relative;
+	margin-left: 20px;
+	float:left;
+}
+
+button {
+  color: white;
+  padding: 14px 20px;
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  background-color: #2471a3;
+  float:left;
+  clear:left;
+  margin-top:45px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+
+div.scrollmenu {
+	background-color: white;
+	overflow: auto;
+	white-space: nowrap;
+	margin: 10px;
+}
+
+div.scrollmenu a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+
+div.scrollmenu div {
+	display: inline-block;
+	color: black;
+	font-weight: bold;
+	padding: 14px;
+}
+
+div.scrollmenu img {
+	display: inline-block;
+	color: white;
+	padding: 14px;
+}
+
+div.scrollmenu img:hover {
+	background-color: #add8e8;
+}
+
+.carousel-inner img {
+	width: 100%; /* Set width to 100% */
+	margin: auto;
+	min-height:200px;
 }
