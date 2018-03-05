@@ -23,8 +23,8 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="homeLoggedIn.html">Home</a></li>
-          <li><a href="closet.html">Closet</a></li>
+          <li><a href="homeLoggedIn.html">Home</a></li>
+          <li class="active"><a href="closet.html">Closet</a></li>
           <li><a href="addoutfit.html">Add to Closet</a></li>
           <li><a href="create.html">Create an Outfit</a></li>
         </ul>
@@ -37,14 +37,38 @@
 
 
 
-<div id="tags">
-      <div id="filter">
-      filter by:
-      </div>
+<div id="filter">
+  filter by:
+</div>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse"  href="#collapse1">
+        Season</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body">    
+        <div class="tags">
       <button class="tag" id="summerT">Summer</button>
       <button class="tag" id="winterT">Winter</button>
       <button class="tag" id="springT">Spring</button>
       <button class="tag" id="fallT">Fall</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse"  href="#collapse2">
+        Style</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">      
+        <div class="tags">
       <button class="tag" id="rainydayT">Rainy Day</button>
       <button class="tag" id="workoutT">Workout</button>
       <button class="tag" id="casualT">Casual</button>
@@ -52,10 +76,13 @@
       <button class="tag" id="experimentalT">Experimental</button>
       <button class="tag" id="loungeT" >Lounge</button>
       <button class="tag" id="pajamasT">Pajamas</button>
+      </div>
     </div>
+    </div>
+  </div>
+</div> 
 
-
-
+ 
 
   <div id="bar">
     <div class = "options">
@@ -67,7 +94,6 @@
       </div>
     </div>
   </div>
-
 
   <div class = "outfits">
     <img src = "images/dress.jpg" class = "picture">
