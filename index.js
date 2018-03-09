@@ -1,20 +1,35 @@
+$(document).ready(function(){
+    $(".suggestion").click(function(){
+      var x = this.id;
+      var s = '#' + x + ' img';
+      var i = $(s).attr('src');
+      swal({
+          title: "Wear this outfit for the day?",
+          icon: i,
+          buttons: true,
+          dangerMode: true,
+        })
+        .then((willDelete) => {
+          if (willDelete) {
+            $('.scrollmenu').children('div').each(function () {
+              if($(this).hasClass('selected')){
+                $(this).removeClass('selected');
+              }
+            })
+            $(this).addClass('selected');
+            swal("Great choice!", {
+              icon: "success",
+            });
+          } else {
+            swal("No problem, pick another outfit!");
+          }
+        });
+      })
+  })
+
 function profile() {
     document.getElementById("dropdown-profile").classList.toggle("showProfile");
 }
-
-// function login () {
-//     var username, password;
-//     username = document.forms["login-form"]["uname"].value;
-//     password = document.forms["login-form"]["psw"].value;
-//     if (username == "jdoe" && password == "asd") {
-//         window.open("homeLoggedIn.html");
-//         return true;
-//     }
-//     else {
-//         alert("Incorrect username or password");
-//         return false;
-//     }
-// }
 
 document.getElementById("login").onclick = function() {
   var username, password;
@@ -27,7 +42,6 @@ document.getElementById("login").onclick = function() {
     alert("Incorrect username or password");
   }
 }
-
 
 window.onclick = function(event2) {
   if (!event2.target.matches('.profilebtn')) {
@@ -111,4 +125,5 @@ function myFunction(){
     }
     document.getElementById("demo").innerHTML = txt;
 }
+
 

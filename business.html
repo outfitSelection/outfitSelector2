@@ -5,13 +5,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <header>
   <link rel="stylesheet" type="text/css" href="clothes.css">
 </header>
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -29,19 +30,29 @@
           <li><a href="create.html">Create an Outfit</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Joe Schmoe</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-user">
+              </span> Joe Schmoe</a>
+              <ul class="dropdown-menu">
+                <li><a href="index.html">Logout<span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+            </li>
         </ul>
+
       </div>
     </div>
-  </nav>
+</nav>
 
 
 <div id="filter">
-  filter by:
+  Filters
+</div>
+<div id="clear">
+  Clear all
 </div>
 <div class="panel-group" id="accordion">
   <div class="panel panel-default">
-    <div class="panel-heading">
+    <div class="panel-heading" data-toggle="collapse"  href="#collapse1">
       <h4 class="panel-title">
         <a data-toggle="collapse"  href="#collapse1">
         Season</a>
@@ -59,7 +70,7 @@
     </div>
   </div>
   <div class="panel panel-default">
-    <div class="panel-heading">
+    <div class="panel-heading" data-toggle="collapse"  href="#collapse2">
       <h4 class="panel-title">
         <a data-toggle="collapse"  href="#collapse2">
         Style</a>
@@ -85,12 +96,15 @@
 
   <div id="bar">
     <div class = "options">
-      <div id="select_all">
+      <button id="select_all">
         Select All
-      </div>
-      <div id="delete">
+      </button>
+      <button id="deselect_all">
+        Deselect All
+      </button>
+      <button id="delete">
         Delete
-      </div>
+      </button>
     </div>
   </div>
 
@@ -104,6 +118,9 @@
       </div>
       <div id="item3" class="formalT article">
         <img src = "images/graysuitjacket.jpg">
+      </div>
+      <div id="item4" class="winterT rainydayT formalT article">
+        <img src = "images/winterformaljacket.jpg">
       </div>
     </div>
 

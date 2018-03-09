@@ -35,10 +35,17 @@
         <li><a href="create.html">Create an Outfit</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Joe Schmoe</a></li>
-      </ul>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-user">
+              </span> Joe Schmoe</a>
+              <ul class="dropdown-menu">
+                <li><a href="index.html">Logout<span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+            </li>
+        </ul>
+
+      </div>
     </div>
-  </div>
 </nav>
 
     <div id="closet">
@@ -68,5 +75,9 @@
         </div>
       </a>
     </div>
+
+  <footer class="container-fluid text-center">
+    <p>Footer Text</p>
+  </footer>
 
 </body>
