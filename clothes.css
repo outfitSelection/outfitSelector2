@@ -1,10 +1,11 @@
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
-      margin-bottom: 0;
+      margin-bottom: 100px;
       border-radius: 0;
       background-color: #add8e8; 
       border-color: lightgrey;
     }
+
     
     /* Add a gray background color and some padding to the footer */
     footer {
@@ -56,23 +57,25 @@
     }
 
     /*Luke*/
+#bar{
 
-
-    #bar{
-
+    position: relative;
     border-bottom: 3px solid black;
     margin-bottom: 5px;
+    top: 20px;
 }
+
 #select_all{
     display: inline-block;
     margin-left: 20px;
     border-style: solid;
     border-radius: 25px;
-    height: 40px;
+    border-color: black;
+    height: 45px;
     width: 100px;
     text-align: center;
-    line-height: 37px;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: bold;
     background-color: #add8e8;  
     position: relative;
     bottom: 5px;
@@ -81,17 +84,44 @@
 #select_all:hover{
 
     cursor: pointer;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
 }
-#delete{
+
+#deselect_all{
+
     display: inline-block;
     margin-left: 20px;
     border-style: solid;
     border-radius: 25px;
-    height: 40px;
+    border-color: black;
+    height: 45px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #add8e8; 
+    position: relative;
+    top: 7px;
+}
+
+#deselect_all:hover{
+
+    cursor: pointer;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+#delete{
+    display: inline-block;
+    margin-left: 20px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    height: 45px;
     width: 80px;
     text-align: center;
-    line-height: 37px;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: bold;
     background-color: #add8e8;
     position: relative;
     bottom: 5px;
@@ -100,6 +130,8 @@
 #delete:hover{
 
     cursor: pointer;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
 }
 
 .outfits{
@@ -207,7 +239,7 @@
   position: relative;
   display: block;
   float: right
-  top: 85px;
+  top: 300px;
   left: 10px;
   margin-left: 15em;
 }
@@ -219,6 +251,8 @@
 }
 
 .article {
+  position: relative;
+  top: 50px;
   display: inline-block;
   margin: 3px;
   border: solid 3px transparent;
@@ -231,9 +265,17 @@
   border-color: green;
 }
 
+.article.deleted, .article:deleted {
+
+  display: none;
+
+}
+
 .article:hover {
 
   cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 
 }
 
@@ -243,8 +285,8 @@
   display: inline-block;
   float: left;
   width: 200px;
-  height: 900px;
-  top: 80px;
+  height: 1200px;
+  top: 135px;
   border-right: solid 3px;
   padding-right: 3px;
 }
@@ -260,7 +302,7 @@
 #filter {
 
   position: relative;
-  top: 80px;
+  top: 135px;
   font-size: 20px;
   left: 3px;
   font-weight: bold;
@@ -268,4 +310,25 @@
   border-right: solid 3px;
   padding-top: 8px;
 
+}
+
+#clear {
+
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  top: 112px;
+  right: 65px;
+  font-color: gray;
+  text-decoration: underline;
+}
+
+#clear:hover {
+
+  cursor: pointer;
+}
+
+.panel-heading {
+
+  cursor: pointer;
 }

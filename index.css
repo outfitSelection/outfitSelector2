@@ -6,37 +6,6 @@
       border-color: lightgrey;
     }
 
-    
-    .dropdown-menu>li>a {
-      color:#428bca;
-    }
-    .dropdown ul.dropdown-menu {
-      border-radius:4px;
-      box-shadow:none;
-      margin-top:20px;
-      width:300px;
-    }
-    .dropdown ul.dropdown-menu:before {
-      content: "";
-      border-bottom: 10px solid #fff;
-      border-right: 10px solid transparent;
-      border-left: 10px solid transparent;
-      position: absolute;
-      top: -10px;
-      right: 16px;
-      z-index: 10;
-    }
-    .dropdown ul.dropdown-menu:after {
-      content: "";
-      border-bottom: 12px solid #ccc;
-      border-right: 12px solid transparent;
-      border-left: 12px solid transparent;
-      position: absolute;
-      top: -12px;
-      right: 14px;
-      z-index: 9;
-    }
-
     #today_suggestions{
       margin-left: 20px;
     }
@@ -53,130 +22,108 @@
       min-height:200px;
     }
 
+    
     .navbar-toggle:hover {
       background-color: blue;
     }
 
-    .scroll-wrapper {
-      position: relative;
-      margin: 1em auto;
-      overflow-x: hidden;
-      overflow-y: hidden;
-    }
+.suggestion {
 
-    div.scrollmenu {
-      background-color: white;
-      overflow: auto;
-      white-space: nowrap;
-      margin: 10px;
-    }
+    display: inline-block;
+    border: solid 3px transparent;
+ }
 
-    div.scrollmenu a {
-      display: inline-block;
-      color: white;
-      text-align: center;
-      padding: 14px;
-      text-decoration: none;
-    }
+ .suggestion:hover {
 
-    div.scrollmenu div {
-      display: inline-block;
-      color: black;
-      font-weight: bold;
-      padding: 14px;
-    }
+    cursor: pointer;
+    border: solid 3px;
+    border-color: #add8e8;
 
-    div.scrollmenu img {
-      display: inline-block;
-      color: white;
-      padding: 14px;
-    }
+ }
 
-    div.scrollmenu img:hover {
-      background-color: #add8e8;
-    }
+ .suggestion.selected{
 
-    .paddles {
-    }
-    .paddle {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 3em;
-    }
-    .left-paddle {
-      left: 0;
-    }
-    .right-paddle {
-      right: 0;
-    }
-    .hidden {
-      display: none;
-    }
+  border: solid 3px;
+  border-color: green;
+
+ }
 
     /*log in form*/
     /* Bordered form */
-    form {
-      border: 3px solid #f1f1f1;
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for container buttons */
+#login {
+    background-color: #2471a3;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+      float: right;
+      padding-top: 16px;
     }
-
-    /* Full-width inputs */
-    input[type=text], input[type=password] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-    }
-
-    .login-label {
-      display: inline-block;
-      max-width: 100%;
-      margin-bottom: 5px;
-      font-weight: 700;
-    }
-
-    /* Set a style for login button */
-    #login {
-      background-color: #2471a3;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    /* Add a hover effect for buttons */
-    button:hover {
-      opacity: 0.8;
-    }
-
-
-    .wrapper {
-      padding: 16px;
-      padding-right: 15px;
-      padding-left: 15px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-
 
     /* Change styles for span and cancel button on extra small screens */
     @media screen and (max-width: 300px) {
       span.psw {
-        float: right;
-        padding-top: 16px;
+        display: block;
+        float: none;
       }
-
-      /* Change styles for span and cancel button on extra small screens */
-      @media screen and (max-width: 300px) {
-        span.psw {
-          display: block;
-          float: none;
-        }
-        .cancelbtn {
-          width: 100%;
-        }
+      .cancelbtn {
+        width: 100%;
       }
+    }
