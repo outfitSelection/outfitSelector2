@@ -4,6 +4,7 @@
   border-radius: 0;
   background-color: #add8e8; 
   border-color: lightgrey;
+  font-weight: bold;
 }
 
 .navbar-toggle:hover {
@@ -41,6 +42,12 @@ button:hover {
 }
 
 #submit-button{
+    color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
   background-color: #2471a3;
   float:left;
   clear:left;

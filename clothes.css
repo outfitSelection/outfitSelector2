@@ -4,6 +4,7 @@
   border-radius: 0;
   background-color: #add8e8; 
   border-color: lightgrey;
+  font-weight: bold;
 }
 
 /*Luke*/
@@ -12,21 +13,21 @@
   position: relative;
   border-bottom: 3px solid black;
   margin-bottom: 5px;
-  top: 20px;
+  top: 30px;
 }
 
 #select_all{
   display: inline-block;
+  color: #333;
   margin-left: 20px;
   border-style: solid;
-  border-radius: 25px;
-  border-color: black;
+  border-radius: 10px;
+  border-color: #ddd;
   height: 45px;
   width: 100px;
   text-align: center;
   font-size: 15px;
-  font-weight: bold;
-  background-color: #add8e8;  
+  background-color: #f5f5f5;  
   position: relative;
   bottom: 5px;
 }
@@ -41,17 +42,17 @@
 #deselect_all{
 
   display: inline-block;
+  color: #333;
   margin-left: 20px;
   border-style: solid;
-  border-radius: 25px;
-  border-color: black;
+  border-radius: 10px;
+  border-color: #ddd;
   height: 45px;
   width: 100px;
   font-size: 15px;
-  font-weight: bold;
-  background-color: #add8e8; 
+  background-color: #f5f5f5; 
   position: relative;
-  top: 7px;
+  bottom: 5px;
 }
 
 #deselect_all:hover{
@@ -63,16 +64,16 @@
 
 #delete{
   display: inline-block;
+  color: #333;
   margin-left: 20px;
   border-style: solid;
-  border-color: black;
-  border-radius: 25px;
+  border-color: #ddd;
+  border-radius: 10px;
   height: 45px;
   width: 80px;
   text-align: center;
   font-size: 15px;
-  font-weight: bold;
-  background-color: #add8e8;
+  background-color: #f5f5f5;
   position: relative;
   bottom: 5px;
 }
@@ -171,14 +172,15 @@
   top: 50px;
   display: inline-block;
   margin: 3px;
-  border: solid 3px transparent;
+  padding: 5px;
+  border: solid 3px lightgray;
   
 }
 
 .article.active, .article:active {
 
   border: solid 3px;
-  border-color: green;
+  border-color: #555759;
 }
 
 .article.deleted, .article:deleted {
@@ -190,8 +192,8 @@
 .article:hover {
 
   cursor: pointer;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 0.75;
+  filter: alpha(opacity=75);
 
 }
 
@@ -201,18 +203,10 @@
   display: inline-block;
   float: left;
   width: 200px;
-  height: 1200px;
+  height: 1500px;
   top: 135px;
   border-right: solid 3px;
   padding-right: 3px;
-}
-
-.panel-title {
-
-}
-
-.panel-body {
-
 }
 
 #filter {
@@ -247,4 +241,78 @@
 .panel-heading {
 
   cursor: pointer;
+}
+
+/*Color filter dots*/
+.dot{
+
+  position: absolute;
+  z-index: 1;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#whitedot{
+
+  background-color: white;
+  left: 125px;
+  top: 21px;
+}
+
+#greydot{
+
+  background-color: grey;
+  left: 125px;
+  top: 87px;
+}
+
+#blackdot{
+
+  background-color: black;
+  left: 125px;
+  top: 152px;
+}
+
+#reddot{
+
+  background-color: red;
+  left: 125px;
+  top: 217px;
+}
+
+#orangedot{
+
+  background-color: orange;
+  left: 125px;
+  top: 282px;
+}
+
+#yellowdot{
+
+  background-color: yellow;
+  left: 125px;
+  top: 347px;
+}
+
+#greendot{
+
+  background-color: green;
+  left: 125px;
+  top: 412px;
+}
+
+#bluedot{
+
+  background-color: blue;
+  left: 125px;
+  top: 478px;
+}
+
+#purpledot{
+
+  background-color: purple;
+  left: 125px;
+  top: 542px;
 }

@@ -11,7 +11,8 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="addoutfit.js"></script>
+	<script src="clothes.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <header>
@@ -36,7 +37,6 @@
 					<li><a href="closet.html">Closet</a></li>
 					<li class="active"><a href="addoutfit.html">Add to Closet</a></li>
 					<li><a href="create.html">Create an Outfit</a></li>
-					<li><a href="#">Laundry Basket</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
@@ -136,7 +136,7 @@
 			<!--Upload image-->
 			<div class="upload-container">
 				Upload Image: <br>
-				<input type="file" id="myFile" multiple size="50" onchange="uploadFile()">
+				<input type="file" id="myFile" multiple size="50" onchange="uploadFile()" required="">
 			</div>
 			<br>
 			<p class="required"> *required </p>
@@ -145,8 +145,8 @@
 
 			<div class="buttons-container">
 				<!-- Button for submitting outfit -->
-				<button id="submit-button" onclick="addOutfitConfirmation()"> Add to Closet
-				</button>
+				<div id="submit-button"> Add to Closet
+				</div>
 
 				<!-- Buton to cancel -->
 				<!-- Button for submitting outfit -->

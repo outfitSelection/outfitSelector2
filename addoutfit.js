@@ -1,16 +1,22 @@
-function addOutfitConfirmation () {
-  var clothingInput, tagsInput; 
+$(document).ready(function(){
+    $("#submit-button").click(function(){
+        var clothingInput, tagsInput; 
 
-  clothingInput = document.forms["add-outfit-form"]["clothing_types"].value;
+        clothingInput = document.forms["add-outfit-form"]["clothing_types"].value;
 
-  if (clothingInput == ""){
-    alert("Please complete required field!!");
-    return false;
-  }
-
-  alert("Outfit added to Closet!");
-  return true;
-}
+        if(clothingInput != ""){
+           swal({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success",
+            button: "Aww yiss!",
+            });
+        }
+        else{
+            {swal("Oh no!", "Please complete all required fields!", "error");}
+        }
+    })
+})
 
 // function to upload images
 function uploadFile(){
@@ -40,5 +46,5 @@ function uploadFile(){
             txt  += "<br>The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead. 
         }
     }
-    document.getElementById("demo").innerHTML = txt;
 }
+

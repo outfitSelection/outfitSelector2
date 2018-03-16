@@ -10,7 +10,7 @@
 <header>
   <link rel="stylesheet" type="text/css" href="clothes.css">
 </header>
-<body>
+<body onload="checkitems()">
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
@@ -28,7 +28,6 @@
           <li class="active"><a href="closet.html">Closet</a></li>
           <li><a href="addoutfit.html">Add to Closet</a></li>
           <li><a href="create.html">Create an Outfit</a></li>
-          <li><a href="#">Laundry Basket</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
@@ -108,13 +107,16 @@
   </div>
 
   <div id="clothes">
-      <div id="item1" class="summerT blueT article">
-        <img src = "images/swimsuit2.jpg">
-      </div>
-      <div id="item2" class="summerT greenT article">
+      <div id="item0" class="summerT article">
         <img src = "images/swimsuit3.jpg">
       </div>
-      <div id="item3" class="summerT springT redT article">
+      <div id="item1" class="summerT article">
+        <img src = "images/swimsuit2.jpg">
+      </div>
+      <div id="item2" class="summerT article">
+        <img src = "images/swimsuit3.jpg">
+      </div>
+      <div id="item3" class="summerT springT article">
         <img src = "images/generic_swim.jpg">
       </div>
     </div>

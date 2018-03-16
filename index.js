@@ -35,11 +35,14 @@ document.getElementById("login").onclick = function() {
   var username, password;
   username = document.getElementById("uname").value;
   password = document.getElementById("psw").value;
-  if (username == "jdoe" && password == "asd") {
+  if (username == "fdoe" && password == "asd") {
     window.location.href = "homeloggedin.html";
-  }
-  else {
-    alert("Incorrect username or password");
+  } else {
+    if (username == "mdoe" && password == "asd") {
+    window.location.href = "homeloggedin2.html";
+      }else{
+        alert("Incorrect username or password");
+    }
   }
 }
 

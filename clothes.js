@@ -1,53 +1,85 @@
-function checkmark(){
-	var img = document.getElementbyID('box1').src;
-	if (img.indexOf('box1')!=-1){
-		document.getElementbyID('box1').src = "images/unchecked.png";
-	}
-	else{
-		document.getElementbyID('box1').src = "images/checkbox.png"; 
-	}
-}
-
-function change() {
-	var img1 = document.getElementbyID("images/checkbox.png"),
-	img2 = document.getElementbyID("images/unchecked.png");
-	var imgElement = document.getElementById('box1');
-
-	imgElement.src = (imgElement.src === img1)? img2 : img1;
-}
-
-function changeImage() {
-	if ( newsrc == "checkbox.png" ) {
-		document.images["box1"].src = "images/checkbox.png";
-		newsrc  = "unchecked.png";
-	}
-	else {
-		document.images["box1"].src = "images/unchecked.png";
-		newsrc  = "checkbox.png";
-	}
-}
-
-
-
-var image_tracker = "checked";
-function lasttry(){
-	var image = document.getElementById('box1');
-	if(image_tracker=='checked'){
-		image.src='images/unchecked.png';
-		image_tracker='unchecked';
-	}
-	else{
-		image.src='images/checkbox.png';
-		image_tracker='checked';
-	}
-}
-
 ///////////Filtering/////////////
+
+
+// function to upload images
+function uploadFile(){
+    var x = document.getElementById("myFile");
+    var txt = "";
+    var itemcount = 0;
+    if ('files' in x) {
+        if (x.files.length == 0) {
+            txt = "Select one or more files.";
+        } else {
+            for (var i = 0; i < x.files.length; i++) {
+                txt += "<br><strong>" + (i+1) + ". file</strong><br>";
+                var file = x.files[i]; 
+
+                if ('name' in file) {
+                    txt += "name: " + file.name + "<br>";
+                }
+                if ('size' in file) {
+                    txt += "size: " + file.size + " bytes <br>";
+                }
+            }
+        }
+    } 
+    else {
+        if (x.value == "") {
+            txt += "Select one or more files.";
+        } else {
+            txt += "The files property is not supported by your browser!";
+            txt  += "<br>The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead. 
+        }
+    }
+}
+
+$(document).ready(function(){
+    $("#submit-button").click(function(){
+        var clothingInput, tagsInput; 
+
+        clothingInput = document.forms["add-outfit-form"]["clothing_types"].value;
+
+        if(clothingInput != ""){
+          sessionStorage.setItem("itemadded", 1);
+          sessionStorage.setItem("itemtype", clothingInput);
+          {swal("Success!", "Clothes added!", "success");}
+        }
+        else{
+            {swal("Oh no!", "Please complete all required fields!", "error");}
+        }
+    })
+})
+
+function checkitems(){
+
+  var x = sessionStorage.getItem('itemadded');
+  var y = sessionStorage.getItem('itemtype');
+  y = y + ".html";
+
+  var path = window.location.pathname;
+  var f = path.split("/").pop();
+
+  console.log(y);
+  console.log(f);
+
+  if(x == 1 && y == f){
+    var i = $('#item0 img').attr('src');
+    swal("Success!", "New items were added to your closet!", i);
+    $('#item0').removeClass('deleted');
+    update();
+    sessionStorage.setItem("itemadded", 0);
+    sessionStorage.removeItem('itemtype');
+  }else{
+
+    $('#item0').addClass('deleted');
+    update();
+  }
+
+}
+
 $(document).ready(function(){
     $("#delete").click(function(){
-
         var count = 0;
-
         $('#clothes').children('div').each(function () {
           if($(this).hasClass("active")){
             count++;
@@ -238,4 +270,3 @@ $(document).ready(function(){
         })
       })
   })
-

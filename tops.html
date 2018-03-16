@@ -11,7 +11,7 @@
 <header>
   <link rel="stylesheet" type="text/css" href="clothes.css">
 </header>
-<body>
+<body onload="checkitems()">
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
@@ -29,7 +29,6 @@
           <li class="active"><a href="closet.html">Closet</a></li>
           <li><a href="addoutfit.html">Add to Closet</a></li>
           <li><a href="create.html">Create an Outfit</a></li>
-          <li><a href="#">Laundry Basket</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
@@ -91,6 +90,38 @@
     </div>
     </div>
   </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" data-toggle="collapse" href="#collapse3">
+      <h4 class="panel-title">
+        <a data-toggle="collapse"  href="#collapse3">
+        Color</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">    
+        <div class="tags">
+      <button class="tag" id="whiteT">White</button>
+      <span class="dot" id="whitedot"></span>
+      <button class="tag" id="greyT">Grey</button>
+      <span class="dot" id="greydot"></span>
+      <button class="tag" id="blackT">Black</button>
+      <span class="dot" id="blackdot"></span>
+      <button class="tag" id="redT">Red</button>
+      <span class="dot" id="reddot"></span>
+      <button class="tag" id="orangeT">Orange</button>
+      <span class="dot" id="orangedot"></span>
+      <button class="tag" id="yellowT">Yellow</button>
+      <span class="dot" id="yellowdot"></span>
+      <button class="tag" id="greenT">Green</button>
+      <span class="dot" id="greendot"></span>
+      <button class="tag" id="blueT">Blue</button>
+      <span class="dot" id="bluedot"></span>
+      <button class="tag" id="purpleT">Purple</button>
+      <span class="dot" id="purpledot"></span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div> 
 
  
@@ -109,49 +140,52 @@
 
 
     <div id="clothes">
-      <div id="item1" class="summerT casualT whiteT article">
+      <div id="item0" class="winterT formalT article">
+        <img src = "images/top3.jpg">
+      </div>
+      <div id="item1" class="summerT casualT article">
         <img src = "images/summercasual.jpg">
       </div>
-      <div id="item2" class="winterT formalT blackT article">
+      <div id="item2" class="winterT formalT article">
         <img src = "images/winterformal.jpg">
       </div>
-      <div id="item3" class="springT casualT blueT article">
+      <div id="item3" class="springT casualT article">
         <img src = "images/springcasual.jpg">
       </div>
-      <div id="item4" class="springT rainydayT casualT whiteT article">
+      <div id="item4" class="springT rainydayT casualT article">
         <img src = "images/springrainyday.jpg">
       </div>
-      <div id="item5" class="fallT experimentalT greenT article">
+      <div id="item5" class="fallT experimentalT article">
         <img src = "images/fallexperimental.jpg">
       </div>
-      <div id="item6" class="winterT experimentalT greenT article">
+      <div id="item6" class="winterT experimentalT article">
         <img src = "images/winterexperimental.jpg">
       </div>
-      <div id="item7" class="winterT pajamasT redT article">
+      <div id="item7" class="winterT pajamasT article">
         <img src = "images/winterpajamas.jpg">
       </div>
-      <div id="item8" class="summerT pajamasT blueT article">
+      <div id="item8" class="summerT pajamasT article">
         <img src = "images/summerpajamas.jpg">
       </div>
-      <div id="item9" class="summerT workoutT pinkT article">
+      <div id="item9" class="summerT workoutT article">
         <img src = "images/summerworkout.jpg">
       </div>
-      <div id="item10" class="winterT workoutT blueT article">
+      <div id="item10" class="winterT workoutT article">
         <img src = "images/winterworkout.jpg">
       </div>
-      <div id="item11" class="summerT casualT whiteT article">
+      <div id="item11" class="summerT casualT article">
         <img src = "images/summercasual.jpg">
       </div>
       <div id="item12" class="winterT formalT article">
         <img src = "images/winterformal.jpg">
       </div>
-      <div id="item13" class="springT casualT blueT article">
+      <div id="item13" class="springT casualT article">
         <img src = "images/springcasual.jpg">
       </div>
-      <div id="item14" class="springT rainydayT casualT yellowT article">
+      <div id="item14" class="springT rainydayT casualT article">
         <img src = "images/springrainyday.jpg">
       </div>
-      <div id="item15" class="fallT experimentalT greenT article">
+      <div id="item15" class="fallT experimentalT article">
         <img src = "images/fallexperimental.jpg">
       </div>
       <div id="item16" class="winterT experimentalT article">
@@ -160,10 +194,10 @@
       <div id="item17" class="winterT pajamasT article">
         <img src = "images/winterpajamas.jpg">
       </div>
-      <div id="item18" class="summerT pajamasT blueT article">
+      <div id="item18" class="summerT pajamasT article">
         <img src = "images/summerpajamas.jpg">
       </div>
-      <div id="item19" class="summerT workoutT orangeT article">
+      <div id="item19" class="summerT workoutT article">
         <img src = "images/summerworkout.jpg">
       </div>
       <div id="item20" class="winterT workoutT article">
@@ -187,16 +221,16 @@
       <div id="item26" class="winterT experimentalT article">
         <img src = "images/winterexperimental.jpg">
       </div>
-      <div id="item27" class="winterT pajamasT redT article">
+      <div id="item27" class="winterT pajamasT article">
         <img src = "images/winterpajamas.jpg">
       </div>
-      <div id="item28" class="summerT pajamasT blueT article">
+      <div id="item28" class="summerT pajamasT article">
         <img src = "images/summerpajamas.jpg">
       </div>
-      <div id="item29" class="summerT workoutT orangeT article">
+      <div id="item29" class="summerT workoutT article">
         <img src = "images/summerworkout.jpg">
       </div>
-      <div id="item30" class="winterT workoutT blueT article">
+      <div id="item30" class="winterT workoutT article">
         <img src = "images/winterworkout.jpg">
       </div>
     </div>
