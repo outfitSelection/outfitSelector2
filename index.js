@@ -14,11 +14,15 @@ $(document).ready(function(){
     })
     .then((value) => {
       switch (value) {
-
         case "edit":
         swal({
+          title: "Wear this outfit for the day?",
           icon: i,
-        });        
+          buttons: {
+            original: true,
+            next: true,
+          },
+        })
         break;
 
         case "OK":
@@ -28,70 +32,70 @@ $(document).ready(function(){
               if($(this).hasClass('selected')){
                 $(this).removeClass('selected');
               }
-            }
-            )
+            })
           $(this).addClass('selected');
           swal("Great choice!", {
             icon: "success",
           });
         }
+        break;
 
         default:
         swal("No problem, pick another outfit!");
         break;
       }
     });
+      })
   })
-})
 
-function profile() {
-  document.getElementById("dropdown-profile").classList.toggle("showProfile");
-}
-
-document.getElementById("login").onclick = function() {
-  var username, password;
-  username = document.getElementById("uname").value;
-  password = document.getElementById("psw").value;
-  if (username == "jdoe" && password == "asd") {
-    window.location.href = "homeloggedin.html";
+  function profile() {
+    document.getElementById("dropdown-profile").classList.toggle("showProfile");
   }
-  else {
-    alert("Incorrect username or password");
+
+  document.getElementById("login").onclick = function() {
+    var username, password;
+    username = document.getElementById("uname").value;
+    password = document.getElementById("psw").value;
+    if (username == "jdoe" && password == "asd") {
+      window.location.href = "homeloggedin.html";
+    }
+    else {
+      alert("Incorrect username or password");
+    }
   }
-}
 
-window.onclick = function(event2) {
-  if (!event2.target.matches('.profilebtn')) {
+  window.onclick = function(event2) {
+    if (!event2.target.matches('.profilebtn')) {
 
-    var dropdowns = document.getElementsByClassName("dropdown-list-profile");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('showProfile')) {
-        openDropdown.classList.remove('showProfile');
+      var dropdowns = document.getElementsByClassName("dropdown-list-profile");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('showProfile')) {
+          openDropdown.classList.remove('showProfile');
+        }
       }
     }
   }
-}
 
-function hamburger() {
-  document.getElementById("dropdown-menu").classList.toggle("show");
-}
+  function hamburger() {
+    document.getElementById("dropdown-menu").classList.toggle("show");
+  }
 
 
-window.onclick = function(event1) {
-  if (!event1.target.matches('.dropdownbtn')) {
+  window.onclick = function(event1) {
+    if (!event1.target.matches('.dropdownbtn')) {
 
-    var dropdowns = document.getElementsByClassName("dropdown-list");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+      var dropdowns = document.getElementsByClassName("dropdown-list");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
       }
     }
   }
-}
 
 
 // for the addOutfit page
