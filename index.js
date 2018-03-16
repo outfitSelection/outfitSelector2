@@ -50,17 +50,19 @@ $(document).ready(function(){
 
   function profile() {
     document.getElementById("dropdown-profile").classList.toggle("showProfile");
-  }
+}
 
-  document.getElementById("login").onclick = function() {
-    var username, password;
-    username = document.getElementById("uname").value;
-    password = document.getElementById("psw").value;
-    if (username == "jdoe" && password == "asd") {
-      window.location.href = "homeloggedin.html";
-    }
-    else {
-      alert("Incorrect username or password");
+document.getElementById("login").onclick = function() {
+  var username, password;
+  username = document.getElementById("uname").value;
+  password = document.getElementById("psw").value;
+  if (username == "fdoe" && password == "asd") {
+    window.location.href = "homeloggedin.html";
+  } else {
+    if (username == "mdoe" && password == "asd") {
+    window.location.href = "homeloggedin2.html";
+      }else{
+        alert("Incorrect username or password");
     }
   }
 

@@ -4,6 +4,7 @@
   border-radius: 0;
   background-color: #add8e8; 
   border-color: lightgrey;
+  font-weight: bold;
 }
 
 #today_suggestions{
@@ -19,10 +20,18 @@
   white-space: nowrap;
 }
 
+
+
 .suggestion {
   display: inline-block;
   overflow: auto;
   border: solid 3px transparent;
+}
+
+.suggestion img{
+
+  height: 400px;
+  width: 340px;
 }
 
 .suggestion:hover {
@@ -30,7 +39,6 @@
   cursor: pointer;
   border: solid 3px;
   border-color: #add8e8;
-
 }
 
 .suggestion.selected{
