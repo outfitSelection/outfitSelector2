@@ -1,0 +1,122 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #add8e8; 
+  border-color: lightgrey;
+  font-weight: bold;
+}
+
+.navbar-toggle:hover {
+  background-color: blue;
+}
+
+label{
+  font-weight: normal;
+
+}
+
+/* Full-width inputs */
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for container buttons */
+button {
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+#submit-button{
+    color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  background-color: #2471a3;
+  float:left;
+  clear:left;
+  margin-top:45px;
+}
+
+#cancel-button{
+  background-color: red;
+  float:right;
+  margin-top:45px;
+
+}
+
+.required {
+  color: red;
+  margin-top:25px;
+  float:left;
+  clear:both;
+}
+
+/* Aligning the tags into columns */
+.tags-container{
+  float:left;
+  clear:both;
+  margin-top:25px;
+}
+.tags-seasons{
+  float:left;
+  margin-top:10px;
+}
+
+.tags-formality{
+  float:left;
+  clear:right;
+  margin-left:20px;
+  margin-top:10px;
+}
+
+.clothing-container{
+  float:left;
+  clear:both;
+}
+
+.color-container{
+  float:left;
+  clear:both;
+  margin-top:25px;
+
+}
+
+.pattern-container{
+  float:left;
+  clear:both;
+  margin-top:25px;
+
+}
+
+.brand-container{
+  width:600px;
+  float:left;
+  clear:both;
+  margin-top:25px;
+
+}
+
+.upload-container{
+  float:left;
+  clear:both;
+  margin-top:25px;
+
+}
+

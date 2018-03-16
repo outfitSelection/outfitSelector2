@@ -1,0 +1,145 @@
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<header>
+  <link rel="stylesheet" type="text/css" href="clothes.css">
+</header>
+<body onload="checkitems()">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="homeloggedin.html"><span class="glyphicon glyphicon-tree-deciduous"></span></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="homeloggedin.html">Home</a></li>
+          <li class="active"><a href="closet.html">Closet</a></li>
+          <li><a href="addoutfit.html">Add to Closet</a></li>
+          <li><a href="create.html">Create an Outfit</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-user">
+              </span> Joe Schmoe</a>
+              <ul class="dropdown-menu">
+                <li><a href="index.html">Logout<span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+            </li>
+        </ul>
+
+      </div>
+    </div>
+</nav>
+
+
+
+<div id="filter">
+  Filters
+</div>
+<div id="clear">
+  Clear all
+</div>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading" data-toggle="collapse"  href="#collapse1">
+      <h4 class="panel-title">
+        <a data-toggle="collapse"  href="#collapse1">
+        Season</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body">    
+        <div class="tags">
+      <button class="tag" id="summerT">Summer</button>
+      <button class="tag" id="winterT">Winter</button>
+      <button class="tag" id="springT">Spring</button>
+      <button class="tag" id="fallT">Fall</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" data-toggle="collapse"  href="#collapse2">
+      <h4 class="panel-title">
+        <a data-toggle="collapse"  href="#collapse2">
+        Style</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">      
+        <div class="tags">
+      <button class="tag" id="rainydayT">Rainy Day</button>
+      <button class="tag" id="workoutT">Workout</button>
+      <button class="tag" id="casualT">Casual</button>
+      <button class="tag" id="formalT">Formal</button>
+      <button class="tag" id="experimentalT">Experimental</button>
+      <button class="tag" id="loungeT" >Lounge</button>
+      <button class="tag" id="pajamasT">Pajamas</button>
+      </div>
+    </div>
+    </div>
+  </div>
+</div> 
+
+ 
+
+  <div id="bar">
+    <div class = "options">
+      <button id="select_all">
+        Select All
+      </button>
+      <button id="deselect_all">
+        Deselect All
+      </button>
+      <button id="delete">
+        Delete
+      </button>
+    </div>
+  </div>
+
+
+  <div id="clothes">
+      <div id="item0" class="workoutT article">
+        <img src = "images/workoutshorts.jpg">
+      </div>
+      <div id="item1" class="summerT casualT article">
+        <img src = "images/cargoshorts.jpg">
+      </div>
+      <div id="item2" class="casualT article">
+        <img src = "images/casualjeans.jpg">
+      </div>
+      <div id="item3" class="casualT loungeT workoutT article">
+        <img src = "images/joggers.jpg">
+      </div>
+      <div id="item4" class="casualT article">
+        <img src = "images/khakis.jpg">
+      </div>
+      <div id="item5" class="workoutT article">
+        <img src = "images/workoutshorts.jpg">
+      </div>
+      <div id="item6" class="casualT loungeT article">
+        <img src = "images/sweatpants.jpg">
+      </div>
+      <div id="item7" class="summerT casualT article">
+        <img src = "images/summercasualshorts.jpg">
+      </div>
+      <div id="item8" class="casualT article">
+        <img src = "images/skinnyjeans.jpg">
+      </div>
+    </div>
+
+
+
+<script src="clothes.js"></script>

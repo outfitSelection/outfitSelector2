@@ -1,0 +1,87 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #add8e8; 
+      border-color: lightgrey;
+      font-weight: bold;
+    }
+    
+
+.navbar-toggle:hover {
+    background-color: blue;
+  }
+
+
+
+/*Closet page formatting*/
+
+#closet {
+
+  position: relative;
+  top: 50px;
+}
+
+.drawer {
+
+  position: relative;
+  text-align: center;
+  margin-top: 70px;
+  background: #add8e8;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 50px;
+  background-image: url("images/drawer2.jpg");
+  font-family: Papyrus, fantasy;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+
+}
+
+
+a:hover{
+
+  text-decoration: none;
+
+}
+
+.drawer#tops:hover {
+
+  background-image: url("images/tops.jpg");
+  opacity: 0.5;
+  color: black;
+  filter: alpha(opacity=50);
+}
+
+.drawer#bottoms:hover {
+
+  background-image: url("images/bottoms.jpg");
+  opacity: 0.5;
+  color: black;
+  filter: alpha(opacity=50);
+}
+
+.drawer#dresses:hover {
+
+  background-image: url("images/dresses.png");
+  opacity: 0.5;
+  color: black;
+  filter: alpha(opacity=50);
+}
+
+.drawer#business:hover {
+
+  background-image: url("images/business.jpg");
+  opacity: 0.5;
+  color: black;
+  filter: alpha(opacity=50);
+}
+
+.drawer#swim:hover {
+
+  background-image: url("images/swim.jpg");
+  opacity: 0.5;
+  color: black;
+  filter: alpha(opacity=50);
+}
