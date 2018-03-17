@@ -16,6 +16,10 @@ $(document).ready(function(){
 			icon: "success",
 		});
 	});
+	
+window.onbeforeunload = function(){
+  return 'Are you sure you want to leave?';
+};
 
 	// $(".wear_btn").click(function(){
 	// 	var x = 'preview-image-container';
