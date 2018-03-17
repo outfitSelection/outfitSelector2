@@ -57,12 +57,24 @@ $(document).ready(function(){
 
 function checkitems(){
 
+  var path = window.location.pathname;
+  var f = path.split("/").pop();
   var x = sessionStorage.getItem('itemadded');
   var y = sessionStorage.getItem('itemtype');
   y = y + ".html";
 
-  var path = window.location.pathname;
-  var f = path.split("/").pop();
+  if(f == "mtops.html"){
+
+    y = "m" + y;
+
+  }else{
+
+    y = "f" + y;
+
+  }
+
+
+
 
   console.log(y);
   console.log(f);
