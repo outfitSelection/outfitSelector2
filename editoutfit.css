@@ -18,15 +18,23 @@
 }
 
 .outfit-container{
-	float:left;
-	clear:left;
-	width: 120%;
-}
-
-.outfit-container img{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 	float:left;
 	clear:left;
 	width: 100%;
+	max-width: 250px;
+	max-height: 347px;
+	padding-bottom:15px;
+}
+
+.outfit-container img{
+	flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+    width, height: auto;
 }
 
 .change-outfit{
@@ -38,8 +46,9 @@
 }
 
 .wear-button{
-	margin-left: 50px;
+	margin-left: 25px;
 }
+
 button {
 	color: white;
 	padding: 14px 20px;
@@ -67,8 +76,8 @@ button:hover {
 
 .suggestion {
 	display: flex;
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
 	float:left;
 	width: 175px;
 	border: solid 3px transparent;
@@ -98,6 +107,11 @@ button:hover {
 	width,height:auto;
 	float:left;
 	margin-left: 20px;
+}
+
+.preview h2{
+	margin-left:50px;
+	padding-bottom:15px;
 }
 
 .carousel-inner img {

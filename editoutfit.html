@@ -10,6 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="editoutfit.js" type="text/javascript"> </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <header>
@@ -49,8 +50,8 @@
         Preview
       </h2>
       <!-- Container for the image of the selected outfit -->
-      <div class="outfit-container">
-        <img src="images/outfit3.jpg">
+      <div class="outfit-container" id="preview-image-container">
+        <img id="preview-image" src="images/outfit3.jpg">
       </div>
     </div>
 
@@ -70,7 +71,7 @@
 
     <!-- Button to wear -->
     <div class="wear-button">
-      <button onclick="wearOutfit()"> Wear </button>
+      <button class="wear_btn"> Wear </button>
     </div>
 
   </body>
