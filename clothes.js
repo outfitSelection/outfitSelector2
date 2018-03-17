@@ -36,6 +36,8 @@ function uploadFile(){
 $(document).ready(function(){
     $("#submit-button").click(function(){
         var clothingInput, tagsInput; 
+        var path = window.location.pathname;
+        var f = path.split("/").pop();
 
         clothingInput = document.forms["add-outfit-form"]["clothing_types"].value;
 
@@ -44,7 +46,7 @@ $(document).ready(function(){
           sessionStorage.setItem("itemtype", clothingInput);
           swal("Success!", "Clothes added!", "success")
           .then((value) => {
-            window.location.href = 'addoutfit.html';
+            window.location.href = f;
           });
         }
         else{
