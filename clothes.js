@@ -36,13 +36,18 @@ function uploadFile(){
 $(document).ready(function(){
     $("#submit-button").click(function(){
         var clothingInput, tagsInput; 
+        var path = window.location.pathname;
+        var f = path.split("/").pop();
 
         clothingInput = document.forms["add-outfit-form"]["clothing_types"].value;
 
         if(clothingInput != ""){
           sessionStorage.setItem("itemadded", 1);
           sessionStorage.setItem("itemtype", clothingInput);
-          {swal("Success!", "Clothes added!", "success");}
+          swal("Success!", "Clothes added!", "success")
+          .then((value) => {
+            window.location.href = f;
+          });
         }
         else{
             {swal("Oh no!", "Please complete all required fields!", "error");}
@@ -52,12 +57,24 @@ $(document).ready(function(){
 
 function checkitems(){
 
+  var path = window.location.pathname;
+  var f = path.split("/").pop();
   var x = sessionStorage.getItem('itemadded');
   var y = sessionStorage.getItem('itemtype');
   y = y + ".html";
 
-  var path = window.location.pathname;
-  var f = path.split("/").pop();
+  if(f == "mtops.html"){
+
+    y = "m" + y;
+
+  }else{
+
+    y = "f" + y;
+
+  }
+
+
+
 
   console.log(y);
   console.log(f);
@@ -270,3 +287,16 @@ $(document).ready(function(){
         })
       })
   })
+
+$(document).ready(function(){
+  $('.dot').click(function() {
+    $('.color-container').children('span').each(function() {
+      if($(this).hasClass('selected')){
+        $(this).removeClass('selected');
+        $(this).css('box-shadow', '0px 0px 0px 0px black');
+      }
+    })
+    $(this).addClass('selected');
+    $(this).css('box-shadow', '0px 0px 0px 5px gray');
+  })
+})
