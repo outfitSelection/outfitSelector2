@@ -16,15 +16,11 @@
 }
 
 .scrollmenu {
-
   overflow: auto;
   white-space: nowrap;
 }
 
-
-
 .suggestion {
-
   display: inline-block;
   overflow: auto;
   border: solid 3px transparent;
@@ -44,11 +40,10 @@
 }
 
 .suggestion.selected{
-
   border: solid 3px;
   border-color: green;
-
 }
+
 
 form {
   border: 3px solid #f1f1f1;
