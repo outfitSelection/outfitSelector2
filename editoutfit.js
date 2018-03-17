@@ -16,17 +16,6 @@ $(document).ready(function(){
 			icon: "success",
 		});
 		
-		window.onbeforeunload = function(){
-	var x = 0;
-$('.scrollmenu').children('div').each(function () {
-			if($(this).hasClass('selected')){
-				x = 1;
-			}
-		})
-if(x == 1){
-  return 'Are you sure you want to leave?';
-}
-};
 	});
 	
 
