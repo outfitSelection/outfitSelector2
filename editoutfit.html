@@ -9,7 +9,7 @@
   rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="selectedoutfit.js" type="text/javascript"> </script>
+  <script src="editoutfit.js" type="text/javascript"> </script>
 </head>
 
 <header>
@@ -43,12 +43,38 @@
     </div>
   </nav>
 
-  <div class="outfit-container">
+  <div class=parent-container>
     <div class="header">
       <h2>
-        Your Outfit
+        Edit Your Outfit
       </h2>
     </div>
+
+    <!-- Menu for switching outfit -->
+    <div class="change-outfit">
+      <h2>
+        Change Outfit
+      </h2>
+      <div class="scrollmenu">
+        <img src="images/replace1.jpg" onclick=editSelectedOutfit()>
+        <img src="images/replace2.jpg">
+        <img src="images/replace3.jpg">
+        <img src="images/replace4.jpg">
+        <img src="images/replace5.jpg">
+      </div>
+    </div>
+    
+    <!-- Container for the image of the selected outfit -->
+    <div class="outfit-container">
+      <img src="images/outfit3.jpg">
+    </div>
+
+    <!-- Button to wear -->
+    <div class="wear-button">
+      <button onclick="wearOutfit()"> Wear </button>
+    </div>
+
+    
   </div>
 
   

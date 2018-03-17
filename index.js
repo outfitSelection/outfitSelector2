@@ -8,21 +8,21 @@ $(document).ready(function(){
       icon: i,
       buttons: {
         edit: true,
-        cancel: true,
-        OK: true,
+        cancel:true,
+        OK:true,
       },
+      dangerMode: true,
     })
     .then((value) => {
-      switch (value) {
+      switch(value){
 
         case "OK":
-        if(value == "OK"){
-          $('.scrollmenu').children('div').each(
-            function () {
-              if($(this).hasClass('selected')){
-                $(this).removeClass('selected');
-              }
-            })
+        if (value) {
+          $('.scrollmenu').children('div').each(function () {
+            if($(this).hasClass('selected')){
+              $(this).removeClass('selected');
+            }
+          })
           $(this).addClass('selected');
           swal("Great choice!", {
             icon: "success",
@@ -30,16 +30,19 @@ $(document).ready(function(){
         }
         break;
 
+        case "edit":
+        window.location.assign("editoutfit.html")
+        break;
+
         default:
         swal("No problem, pick another outfit!");
-        break;
       }
     });
-      })
   })
+})
 
-  function profile() {
-    document.getElementById("dropdown-profile").classList.toggle("showProfile");
+function profile() {
+  document.getElementById("dropdown-profile").classList.toggle("showProfile");
 }
 
 document.getElementById("login").onclick = function() {
@@ -50,44 +53,45 @@ document.getElementById("login").onclick = function() {
     window.location.href = "homeloggedin.html";
   } else {
     if (username == "mdoe" && password == "asd") {
-    window.location.href = "homeloggedin2.html";
-      }else{
-        alert("Incorrect username or password");
+      window.location.href = "homeloggedin2.html";
+    }else{
+      alert("Incorrect username or password");
     }
   }
+}
 
-  window.onclick = function(event2) {
-    if (!event2.target.matches('.profilebtn')) {
+window.onclick = function(event2) {
+  if (!event2.target.matches('.profilebtn')) {
 
-      var dropdowns = document.getElementsByClassName("dropdown-list-profile");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('showProfile')) {
-          openDropdown.classList.remove('showProfile');
-        }
+    var dropdowns = document.getElementsByClassName("dropdown-list-profile");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('showProfile')) {
+        openDropdown.classList.remove('showProfile');
       }
     }
   }
+}
 
-  function hamburger() {
-    document.getElementById("dropdown-menu").classList.toggle("show");
-  }
+function hamburger() {
+  document.getElementById("dropdown-menu").classList.toggle("show");
+}
 
 
-  window.onclick = function(event1) {
-    if (!event1.target.matches('.dropdownbtn')) {
+window.onclick = function(event1) {
+  if (!event1.target.matches('.dropdownbtn')) {
 
-      var dropdowns = document.getElementsByClassName("dropdown-list");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
+    var dropdowns = document.getElementsByClassName("dropdown-list");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
       }
     }
   }
+}
 
 
 // for the addOutfit page
@@ -138,5 +142,4 @@ function myFunction(){
         }
         document.getElementById("demo").innerHTML = txt;
       }
-
 
