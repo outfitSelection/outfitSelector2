@@ -1,0 +1,159 @@
+<html>
+
+<head>
+	<title>Add To Closet</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="clothes.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<header>
+	<link rel="stylesheet" href="addoutfit.css">
+</header>
+
+<body>
+	<!-- Bootstrap nav bar -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="homeloggedin.html"><span class="glyphicon glyphicon-tree-deciduous"></span></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="homeloggedin.html">Home</a></li>
+					<li><a href="fcloset.html">Closet</a></li>
+					<li class="active"><a href="addoutfit.html">Add to Closet</a></li>
+					<li><a href="create.html">Create an Outfit</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-user">
+              </span> Felicia Doe</a>
+              <ul class="dropdown-menu">
+                <li><a href="index.html">Logout<span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+            </li>
+        </ul>
+
+      </div>
+    </div>
+</nav>
+
+	<!-- The Form Section of the page-->
+	<form name ="add-outfit-form">
+		<div class="container">
+			<!-- Drop down menu for the clothing types -->
+			<br>
+			<label for="clothing" class="required">*Clothing Type:</label>
+			<!-- *Clothing Type: -->
+			<br>
+			<div class="clothing-container">
+				<select name="clothing_types" required>
+					<option value="" selected disbaled></option>
+					<option value="tops">Top</option>
+					<option value="bottoms">Bottom</option>
+					<option value="dresses">Dress</option>
+					<option value="business">Business</option>
+					<option value="swim">Swim</option>
+				</select>
+			</div>
+			<br>
+			<br>
+
+			<!-- Drop down menu for pre-defined tags -->
+			<div class="tags-container">
+				Tags: <br>   
+				<div class="tags-seasons">
+					<label><input type="checkbox" name="tags"> Summer </label><br>
+					<label><input type="checkbox" name="tags"> Winter </label><br>
+					<label><input type="checkbox" name="tags"> Spring </label><br>
+					<label><input type="checkbox" name="tags"> Fall </label><br>
+				</div>
+				<div class="tags-formality">
+					<label><input type="checkbox" name="tags"> Workout </label><br>
+					<label><input type="checkbox" name="tags"> Casual </label><br>
+					<label><input type="checkbox" name="tags"> Formal </label><br>
+					<label><input type="checkbox" name="tags"> Experimental </label><br>
+					<label><input type="checkbox" name="tags"> Lounge </label><br>
+					<label><input type="checkbox" name="tags"> Pajamas </label><br>
+				</div>
+			</div>
+			<br>
+
+			<!-- Color picker -->
+			<div class="color-container">
+				Color:<br>
+				<input type="radio" id="color1" name="color" value="white">
+				<label for="color1">White</label>
+				<input type="radio" id="color2" name="color" value="grey">
+				<label for="color2">Grey</label>
+				<input type="radio" id="color3" name="color" value="black">
+				<label for="color3">Black</label>
+				<input type="radio" id="color4" name="color" value="red">
+				<label for="color4">Red</label>
+				<input type="radio" id="color5" name="color" value="orange">
+				<label for="color5">Orange</label>
+				<input type="radio" id="color6" name="color" value="yellow">
+				<label for="color6">Yellow</label>
+				<input type="radio" id="color7" name="color" value="green">
+				<label for="color7">Green</label>
+				<input type="radio" id="color8" name="color" value="blue">
+				<label for="color8">Blue</label>
+				<input type="radio" id="color9" name="color" value="purple">
+				<label for="color9">Purple</label>
+			</div>
+			<br>
+
+			<div class="pattern-container">
+				Pattern? <br>
+				<input type="radio" id = "yes-pattern" name="pattern" value = "yes">
+				<label for="yes-pattern">Yes</label>
+				<input type="radio" id = "no-pattern" name="pattern" value = "no">
+				<label for="no-pattern">No</label>
+			</div>
+			<br>
+
+			<div class="brand-container">
+				Brand Name: <br>
+				<input type="text" name="brand">
+			</div>
+			<br>
+			<br>
+
+			<!--Upload image-->
+			<div class="upload-container">
+				Upload Image: <br>
+				<input type="file" id="myFile" multiple size="50" onchange="uploadFile()" required="">
+			</div>
+			<br>
+			<p class="required"> *required </p>
+			<br>
+			<br>
+
+			<div class="buttons-container">
+				<!-- Button for submitting outfit -->
+				<div id="submit-button"> Add to Closet
+				</div>
+
+				<!-- Buton to cancel -->
+				<!-- Button for submitting outfit -->
+				<button id="cancel-button" onclick="javascript:window.location.href='homeloggedin.html'""> Cancel
+				</button>
+			</div>
+		</div>
+	</form>	
+</body>
+</html>
