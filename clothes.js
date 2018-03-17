@@ -42,7 +42,10 @@ $(document).ready(function(){
         if(clothingInput != ""){
           sessionStorage.setItem("itemadded", 1);
           sessionStorage.setItem("itemtype", clothingInput);
-          {swal("Success!", "Clothes added!", "success");}
+          swal("Success!", "Clothes added!", "success")
+          .then((value) => {
+            window.location.href = 'addoutfit.html';
+          });
         }
         else{
             {swal("Oh no!", "Please complete all required fields!", "error");}
@@ -270,3 +273,16 @@ $(document).ready(function(){
         })
       })
   })
+
+$(document).ready(function(){
+  $('.dot').click(function() {
+    $('.color-container').children('span').each(function() {
+      if($(this).hasClass('selected')){
+        $(this).removeClass('selected');
+        $(this).css('box-shadow', '0px 0px 0px 0px black');
+      }
+    })
+    $(this).addClass('selected');
+    $(this).css('box-shadow', '0px 0px 0px 5px gray');
+  })
+})
