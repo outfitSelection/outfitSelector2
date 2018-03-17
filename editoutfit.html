@@ -13,7 +13,7 @@
 </head>
 
 <header>
-  <link rel="stylesheet" href="selectedoutfit.css">
+  <link rel="stylesheet" href="editoutfit.css">
 </header>
 
 <body>
@@ -44,29 +44,28 @@
   </nav>
 
   <div class=parent-container>
-    <div class="header">
+    <div class="preview">
       <h2>
-        Edit Your Outfit
+        Preview
       </h2>
+      <!-- Container for the image of the selected outfit -->
+      <div class="outfit-container">
+        <img src="images/outfit3.jpg">
+      </div>
     </div>
 
     <!-- Menu for switching outfit -->
     <div class="change-outfit">
       <h2>
-        Change Outfit
+        Combinations
       </h2>
-      <div class="scrollmenu">
-        <img src="images/replace1.jpg" onclick=editSelectedOutfit()>
-        <img src="images/replace2.jpg">
-        <img src="images/replace3.jpg">
-        <img src="images/replace4.jpg">
-        <img src="images/replace5.jpg">
+      <div class="scrollmenu" id="menu">
+        <div id="choice1" class="suggestion"><img src="images/replace1.jpg"></div>
+        <div id="choice2" class="suggestion"><img src="images/replace2.jpg"></div>
+        <div id="choice3" class="suggestion"><img src="images/replace3.jpg"></div>
+        <div id="choice4" class="suggestion"><img src="images/replace4.jpg"></div>
+        <div id="choice5" class="suggestion"><img src="images/replace5.jpg"></div>
       </div>
-    </div>
-    
-    <!-- Container for the image of the selected outfit -->
-    <div class="outfit-container">
-      <img src="images/outfit3.jpg">
     </div>
 
     <!-- Button to wear -->
@@ -74,12 +73,8 @@
       <button onclick="wearOutfit()"> Wear </button>
     </div>
 
-    
-  </div>
-
-  
-</body>
-</html>
+  </body>
+  </html>
 
 
 
