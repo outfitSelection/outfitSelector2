@@ -42,7 +42,7 @@ button:hover {
 }
 
 #submit-button{
-    color: white;
+  color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -52,6 +52,7 @@ button:hover {
   float:left;
   clear:left;
   margin-top:45px;
+  text-align: center;
 }
 
 #cancel-button{
@@ -120,3 +121,79 @@ button:hover {
 
 }
 
+.dot{
+
+  position: relative;
+  z-index: 1;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: inline-block;
+  margin-left: 10px;
+  right: 12px;
+  top: 7px;
+}
+
+.dot:hover{
+
+  cursor: pointer;
+
+}
+
+.dot.selected, .dot:selected{
+
+  border: 5px, solid;
+  border-color: orange;
+}
+
+#whitedot{
+
+  background-color: white;
+}
+
+#greydot{
+
+  background-color: grey;
+}
+
+#blackdot{
+
+  background-color: black;
+}
+
+#reddot{
+
+  background-color: red;
+
+}
+
+#orangedot{
+
+  background-color: orange;
+
+}
+
+#yellowdot{
+
+  background-color: yellow;
+
+}
+
+#greendot{
+
+  background-color: green;
+
+}
+
+#bluedot{
+
+  background-color: blue;
+
+}
+
+#purpledot{
+
+  background-color: purple;
+  
+}
