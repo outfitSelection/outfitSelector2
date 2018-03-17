@@ -14,16 +14,6 @@ $(document).ready(function(){
     })
     .then((value) => {
       switch (value) {
-        case "edit":
-        swal({
-          title: "Wear this outfit for the day?",
-          icon: i,
-          buttons: {
-            original: true,
-            next: true,
-          },
-        })
-        break;
 
         case "OK":
         if(value == "OK"){
