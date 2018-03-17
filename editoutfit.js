@@ -15,9 +15,8 @@ $(document).ready(function(){
 		swal("Great choice!", {
 			icon: "success",
 		});
-	});
-	
-window.onbeforeunload = function(){
+		
+		window.onbeforeunload = function(){
 	var x = 0;
 $('.scrollmenu').children('div').each(function () {
 			if($(this).hasClass('selected')){
@@ -28,6 +27,9 @@ if(x == 1){
   return 'Are you sure you want to leave?';
 }
 };
+	});
+	
+
 
 	// $(".wear_btn").click(function(){
 	// 	var x = 'preview-image-container';
